@@ -1,13 +1,13 @@
 # SHRAIBER
 
-Сайт лицея с публичной страницей, встроенной админкой и простым Node.js сервером без фреймворка.
+Сайт ліцею з публічною сторінкою, вбудованою адмінпанеллю та простим Node.js сервером без фреймворку.
 
 ## Запуск
 
-1. Установить зависимости:
+1. Встановити залежності:
    `npm install`
-2. Создать `.env` на основе [`.env.example`](C:/Users/vgkog/PycharmProjects/SHRAIBER/.env.example)
-3. Для разработки фронтенда:
+2. Створити `.env` на основі [`.env.example`](/C:/Users/vgkog/PycharmProjects/SHRAIBER/.env.example)
+3. Для розробки фронтенду:
    `npm run dev`
 4. Для production-сервера:
    `npm run build`
@@ -15,25 +15,25 @@
 
 ## Структура
 
-- `index.html`, `styles.css`, `script.js` — публичный сайт
-- `admin/index.html`, `admin/admin.css`, `admin/admin.js` — админка
-- `server.js` — HTTP-сервер, API, загрузка изображений, форма заявок
-- `content.json` — контент для CMS
-- `contact-messages.json` — входящие заявки с сайта, создается автоматически
-- `dist/` — production build Vite
+- `index.html`, `styles.css`, `script.js` - публічний сайт
+- `admin/index.html`, `admin/admin.css`, `admin/admin.js` - адмінпанель
+- `server.js` - HTTP-сервер, API, завантаження зображень, форма заявок
+- `content.json` - контент для CMS
+- `contact-messages.json` - вхідні заявки із сайту, створюється автоматично
+- `dist/` - production build Vite
 
 ## API
 
-- `POST /api/login` — вход в админку
-- `GET /api/content` — получить контент
-- `POST /api/content` — сохранить контент
-- `POST /api/upload` — загрузить изображение
-- `POST /api/contact` — отправить заявку с сайта
-- `GET /api/inquiries` — список заявок в админке
+- `POST /api/login` - вхід в адмінпанель
+- `GET /api/content` - отримати контент
+- `POST /api/content` - зберегти контент
+- `POST /api/upload` - завантажити зображення
+- `POST /api/contact` - надіслати заявку із сайту
+- `GET /api/inquiries` - список заявок в адмінпанелі
 
-## Замечания
+## Примітки
 
-- Сервер требует `ADMIN_PASSWORD` в окружении.
-- Админка работает по bearer-token с TTL.
-- Размер загрузки изображения ограничен 5 MB.
-- Файл `contact-messages.json` не должен коммититься в репозиторий.
+- Сервер потребує `ADMIN_PASSWORD` у середовищі.
+- Адмінпанель працює через bearer-token з TTL.
+- Розмір завантаження зображення обмежений до 5 MB.
+- Файл `contact-messages.json` не повинен комітитись у репозиторій.
