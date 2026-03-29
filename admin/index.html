@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>РђРґРјС–РЅ-РїР°РЅРµР»СЊ вЂ” Р›С–С†РµР№ РЁСЂР°Р№Р±РµСЂ</title>
+    <title>Адмін-панель — Ліцей Шрайбер</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -11,129 +11,129 @@
 </head>
 <body>
 
-<!-- в•ђв•ђв•ђ LOGIN в•ђв•ђв•ђ -->
+<!-- ═══ LOGIN ═══ -->
 <div class="login-screen" id="loginScreen">
     <div class="login-card">
-        <div class="logo-icon">рџ“љ</div>
-        <h1>РђРґРјС–РЅ-РїР°РЅРµР»СЊ</h1>
-        <p>Р›С–С†РµР№ СЂРѕРґРёРЅРё РЁСЂР°Р№Р±РµСЂ</p>
-        <div class="login-error" id="loginError">РќРµРІС–СЂРЅРёР№ РїР°СЂРѕР»СЊ</div>
+        <div class="logo-icon">📚</div>
+        <h1>Адмін-панель</h1>
+        <p>Ліцей родини Шрайбер</p>
+        <div class="login-error" id="loginError">Невірний пароль</div>
         <form id="loginForm">
             <div class="form-group">
-                <label>РџР°СЂРѕР»СЊ</label>
-                <input type="password" id="loginPassword" placeholder="Р’РІРµРґС–С‚СЊ РїР°СЂРѕР»СЊ" required autofocus>
+                <label>Пароль</label>
+                <input type="password" id="loginPassword" placeholder="Введіть пароль" required autofocus>
             </div>
-            <button type="submit" class="btn btn-primary">РЈРІС–Р№С‚Рё</button>
+            <button type="submit" class="btn btn-primary">Увійти</button>
         </form>
     </div>
 </div>
 
-<!-- в•ђв•ђв•ђ ADMIN PANEL в•ђв•ђв•ђ -->
+<!-- ═══ ADMIN PANEL ═══ -->
 <div class="admin" id="adminPanel">
     <aside class="sidebar">
         <div class="sidebar__logo">
-            <h2><span>рџ“љ</span> РђРґРјС–РЅ-РїР°РЅРµР»СЊ</h2>
-            <small>Р›С–С†РµР№ РЁСЂР°Р№Р±РµСЂ</small>
+            <h2><span>📚</span> Адмін-панель</h2>
+            <small>Ліцей Шрайбер</small>
         </div>
         <nav class="sidebar__nav">
             <a class="sidebar__link active" data-section="hero">
-                <span class="icon">рџЏ </span> Р“РѕР»РѕРІРЅРёР№ РµРєСЂР°РЅ
+                <span class="icon">🏠</span> Головний екран
             </a>
             <a class="sidebar__link" data-section="about">
-                <span class="icon">в„№пёЏ</span> РџСЂРѕ Р»С–С†РµР№
+                <span class="icon">ℹ️</span> Про ліцей
             </a>
             <a class="sidebar__link" data-section="values">
-                <span class="icon">в­ђ</span> Р¦С–РЅРЅРѕСЃС‚С–
+                <span class="icon">⭐</span> Цінності
             </a>
             <a class="sidebar__link" data-section="news">
-                <span class="icon">рџ“°</span> РќРѕРІРёРЅРё
+                <span class="icon">📰</span> Новини
             </a>
             <a class="sidebar__link" data-section="contacts">
-                <span class="icon">рџ“ћ</span> РљРѕРЅС‚Р°РєС‚Рё
+                <span class="icon">📞</span> Контакти
             </a>
             <a class="sidebar__link" data-section="inquiries">
-                <span class="icon">рџ“Ё</span> Р—РІРµСЂРЅРµРЅРЅСЏ
+                <span class="icon">📨</span> Звернення
             </a>
         </nav>
         <div class="sidebar__footer">
-            <a href="/" target="_blank" class="preview-link" style="margin-bottom: 12px; display: block;">рџ”— РџРµСЂРµРіР»СЏРЅСѓС‚Рё СЃР°Р№С‚</a>
-            <button class="btn btn-ghost" onclick="logout()">Р’РёР№С‚Рё</button>
+            <a href="/" target="_blank" class="preview-link" style="margin-bottom: 12px; display: block;">🔗 Переглянути сайт</a>
+            <button class="btn btn-ghost" onclick="logout()">Вийти</button>
         </div>
     </aside>
 
     <main class="main">
         <div class="main__header">
-            <h1 id="sectionTitle">Р“РѕР»РѕРІРЅРёР№ РµРєСЂР°РЅ</h1>
+            <h1 id="sectionTitle">Головний екран</h1>
             <div style="display: flex; gap: 12px;">
-                <button class="btn btn-save" onclick="saveContent()">рџ’ѕ Р—Р±РµСЂРµРіС‚Рё</button>
+                <button class="btn btn-save" onclick="saveContent()">💾 Зберегти</button>
             </div>
         </div>
 
         <div class="status-bar">
             <span class="dot"></span>
-            РЎР°Р№С‚ РїСЂР°С†СЋС”. Р—РјС–РЅРё Р·'СЏРІР»СЏС‚СЊСЃСЏ РїС–СЃР»СЏ Р·Р±РµСЂРµР¶РµРЅРЅСЏ С‚Р° РѕРЅРѕРІР»РµРЅРЅСЏ СЃС‚РѕСЂС–РЅРєРё.
+            Сайт працює. Зміни з'являться після збереження та оновлення сторінки.
         </div>
 
-        <!-- в•ђв•ђв•ђ HERO в•ђв•ђв•ђ -->
+        <!-- ═══ HERO ═══ -->
         <div class="panel active" id="panel-hero">
             <div class="card">
-                <div class="card__title">рџЋЇ Р—Р°РіРѕР»РѕРІРѕРє (Hero)</div>
+                <div class="card__title">🎯 Заголовок (Hero)</div>
                 <div class="form-group">
-                    <label>РџС–РґР·Р°РіРѕР»РѕРІРѕРє (UA)</label>
+                    <label>Підзаголовок (UA)</label>
                     <input type="text" data-field="hero.subtitle_ua">
                 </div>
                 <div class="form-group">
-                    <label>РџС–РґР·Р°РіРѕР»РѕРІРѕРє (EN)</label>
+                    <label>Підзаголовок (EN)</label>
                     <input type="text" data-field="hero.subtitle_en">
                 </div>
                 <div class="field-row three">
                     <div class="form-group">
-                        <label>Р СЏРґРѕРє 1 (UA)</label>
+                        <label>Рядок 1 (UA)</label>
                         <input type="text" data-field="hero.title_line1_ua">
                     </div>
                     <div class="form-group">
-                        <label>РђРєС†РµРЅС‚ (UA)</label>
+                        <label>Акцент (UA)</label>
                         <input type="text" data-field="hero.title_accent_ua">
                     </div>
                     <div class="form-group">
-                        <label>Р СЏРґРѕРє 2 (UA)</label>
+                        <label>Рядок 2 (UA)</label>
                         <input type="text" data-field="hero.title_line2_ua">
                     </div>
                 </div>
                 <div class="field-row three">
                     <div class="form-group">
-                        <label>Р СЏРґРѕРє 1 (EN)</label>
+                        <label>Рядок 1 (EN)</label>
                         <input type="text" data-field="hero.title_line1_en">
                     </div>
                     <div class="form-group">
-                        <label>РђРєС†РµРЅС‚ (EN)</label>
+                        <label>Акцент (EN)</label>
                         <input type="text" data-field="hero.title_accent_en">
                     </div>
                     <div class="form-group">
-                        <label>Р СЏРґРѕРє 2 (EN)</label>
+                        <label>Рядок 2 (EN)</label>
                         <input type="text" data-field="hero.title_line2_en">
                     </div>
                 </div>
             </div>
 
             <div class="card">
-                <div class="card__title">рџ“ќ РћРїРёСЃ С‚Р° РєРЅРѕРїРєРё</div>
+                <div class="card__title">📝 Опис та кнопки</div>
                 <div class="form-group">
-                    <label>РћРїРёСЃ (UA)</label>
+                    <label>Опис (UA)</label>
                     <textarea data-field="hero.description_ua" rows="3"></textarea>
                 </div>
                 <div class="form-group">
-                    <label>РћРїРёСЃ (EN)</label>
+                    <label>Опис (EN)</label>
                     <textarea data-field="hero.description_en" rows="3"></textarea>
                 </div>
                 <div class="field-row">
                     <div class="form-group">
-                        <label>РљРЅРѕРїРєР° 1 (UA / EN)</label>
+                        <label>Кнопка 1 (UA / EN)</label>
                         <input type="text" data-field="hero.cta_primary_ua" style="margin-bottom:8px">
                         <input type="text" data-field="hero.cta_primary_en">
                     </div>
                     <div class="form-group">
-                        <label>РљРЅРѕРїРєР° 2 (UA / EN)</label>
+                        <label>Кнопка 2 (UA / EN)</label>
                         <input type="text" data-field="hero.cta_secondary_ua" style="margin-bottom:8px">
                         <input type="text" data-field="hero.cta_secondary_en">
                     </div>
@@ -141,89 +141,89 @@
             </div>
         </div>
 
-        <!-- в•ђв•ђв•ђ ABOUT в•ђв•ђв•ђ -->
+        <!-- ═══ ABOUT ═══ -->
         <div class="panel" id="panel-about">
             <div class="card">
-                <div class="card__title">в„№пёЏ РЎРµРєС†С–СЏ "РџСЂРѕ Р»С–С†РµР№"</div>
+                <div class="card__title">ℹ️ Секція "Про ліцей"</div>
                 <div class="field-row">
                     <div class="form-group">
-                        <label>Р—Р°РіРѕР»РѕРІРѕРє (UA)</label>
+                        <label>Заголовок (UA)</label>
                         <input type="text" data-field="about.title_ua">
                     </div>
                     <div class="form-group">
-                        <label>Р—Р°РіРѕР»РѕРІРѕРє (EN)</label>
+                        <label>Заголовок (EN)</label>
                         <input type="text" data-field="about.title_en">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label>РўРµРєСЃС‚ (UA)</label>
+                    <label>Текст (UA)</label>
                     <textarea data-field="about.text_ua" rows="4"></textarea>
                 </div>
                 <div class="form-group">
-                    <label>РўРµРєСЃС‚ (EN)</label>
+                    <label>Текст (EN)</label>
                     <textarea data-field="about.text_en" rows="4"></textarea>
                 </div>
             </div>
 
             <div class="card">
-                <div class="card__title">рџ“Љ РЎС‚Р°С‚РёСЃС‚РёРєР°</div>
+                <div class="card__title">📊 Статистика</div>
                 <div class="field-row three">
                     <div class="form-group">
-                        <label>Р§РёСЃР»Рѕ 1</label>
+                        <label>Число 1</label>
                         <input type="text" data-field="about.stat1_value">
-                        <input type="text" data-field="about.stat1_label_ua" placeholder="РџС–РґРїРёСЃ UA" style="margin-top:8px">
-                        <input type="text" data-field="about.stat1_label_en" placeholder="РџС–РґРїРёСЃ EN" style="margin-top:8px">
+                        <input type="text" data-field="about.stat1_label_ua" placeholder="Підпис UA" style="margin-top:8px">
+                        <input type="text" data-field="about.stat1_label_en" placeholder="Підпис EN" style="margin-top:8px">
                     </div>
                     <div class="form-group">
-                        <label>Р§РёСЃР»Рѕ 2</label>
+                        <label>Число 2</label>
                         <input type="text" data-field="about.stat2_value">
-                        <input type="text" data-field="about.stat2_label_ua" placeholder="РџС–РґРїРёСЃ UA" style="margin-top:8px">
-                        <input type="text" data-field="about.stat2_label_en" placeholder="РџС–РґРїРёСЃ EN" style="margin-top:8px">
+                        <input type="text" data-field="about.stat2_label_ua" placeholder="Підпис UA" style="margin-top:8px">
+                        <input type="text" data-field="about.stat2_label_en" placeholder="Підпис EN" style="margin-top:8px">
                     </div>
                     <div class="form-group">
-                        <label>Р§РёСЃР»Рѕ 3</label>
+                        <label>Число 3</label>
                         <input type="text" data-field="about.stat3_value">
-                        <input type="text" data-field="about.stat3_label_ua" placeholder="РџС–РґРїРёСЃ UA" style="margin-top:8px">
-                        <input type="text" data-field="about.stat3_label_en" placeholder="РџС–РґРїРёСЃ EN" style="margin-top:8px">
+                        <input type="text" data-field="about.stat3_label_ua" placeholder="Підпис UA" style="margin-top:8px">
+                        <input type="text" data-field="about.stat3_label_en" placeholder="Підпис EN" style="margin-top:8px">
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- в•ђв•ђв•ђ VALUES в•ђв•ђв•ђ -->
+        <!-- ═══ VALUES ═══ -->
         <div class="panel" id="panel-values">
             <div class="card">
-                <div class="card__title">в­ђ Р¦С–РЅРЅРѕСЃС‚С– Р»С–С†РµСЋ (4 РєР°СЂС‚РѕС‡РєРё)</div>
+                <div class="card__title">⭐ Цінності ліцею (4 карточки)</div>
                 <div id="valuesContainer"></div>
             </div>
         </div>
 
-        <!-- в•ђв•ђв•ђ NEWS в•ђв•ђв•ђ -->
+        <!-- ═══ NEWS ═══ -->
         <div class="panel" id="panel-news">
             <div class="card">
-                <div class="card__title">рџ“° РќРѕРІРёРЅРё</div>
+                <div class="card__title">📰 Новини</div>
                 <div id="newsContainer"></div>
                 <button class="btn btn-ghost" onclick="addNewsItem()" style="margin-top: 12px;">
-                    + Р”РѕРґР°С‚Рё РЅРѕРІРёРЅСѓ
+                    + Додати новину
                 </button>
             </div>
         </div>
 
-        <!-- в•ђв•ђв•ђ CONTACTS в•ђв•ђв•ђ -->
+        <!-- ═══ CONTACTS ═══ -->
         <div class="panel" id="panel-contacts">
             <div class="card">
-                <div class="card__title">рџ“ћ РљРѕРЅС‚Р°РєС‚РЅР° С–РЅС„РѕСЂРјР°С†С–СЏ</div>
+                <div class="card__title">📞 Контактна інформація</div>
                 <div class="form-group">
-                    <label>РђРґСЂРµСЃР° (UA)</label>
+                    <label>Адреса (UA)</label>
                     <textarea data-field="contacts.address_ua" rows="3"></textarea>
                 </div>
                 <div class="form-group">
-                    <label>РђРґСЂРµСЃР° (EN)</label>
+                    <label>Адреса (EN)</label>
                     <textarea data-field="contacts.address_en" rows="3"></textarea>
                 </div>
                 <div class="field-row">
                     <div class="form-group">
-                        <label>РўРµР»РµС„РѕРЅ</label>
+                        <label>Телефон</label>
                         <input type="text" data-field="contacts.phone">
                     </div>
                     <div class="form-group">
@@ -240,7 +240,7 @@
 
         <div class="panel" id="panel-inquiries">
             <div class="card">
-                <div class="card__title">рџ“Ё Р—Р°СЏРІРєРё Р· С„РѕСЂРјРё</div>
+                <div class="card__title">📨 Заявки з форми</div>
                 <div id="inquiriesContainer"></div>
             </div>
         </div>

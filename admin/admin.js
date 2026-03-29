@@ -1,4 +1,4 @@
-﻿let content = {};
+let content = {};
 let token = '';
 let inquiries = [];
 
@@ -11,7 +11,7 @@ function escapeHtml(value) {
         .replace(/'/g, '&#39;');
 }
 
-// в•ђв•ђв•ђ AUTH в•ђв•ђв•ђ
+// ═══ AUTH ═══
 document.getElementById('loginForm').addEventListener('submit', async (e) => {
     e.preventDefault();
     const password = document.getElementById('loginPassword').value;
@@ -32,7 +32,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
             document.getElementById('loginError').style.display = 'block';
         }
     } catch (err) {
-        document.getElementById('loginError').textContent = 'РџРѕРјРёР»РєР° Р·\'С”РґРЅР°РЅРЅСЏ';
+        document.getElementById('loginError').textContent = 'Помилка з\'єднання';
         document.getElementById('loginError').style.display = 'block';
     }
 });
@@ -59,7 +59,7 @@ function logout() {
     document.getElementById('loginPassword').value = '';
 }
 
-// в•ђв•ђв•ђ CONTENT в•ђв•ђв•ђ
+// ═══ CONTENT ═══
 async function loadContent() {
     try {
         const res = await fetch('/api/content', {
@@ -69,7 +69,7 @@ async function loadContent() {
         content = await res.json();
         populateFields();
     } catch (err) {
-        showToast('РџРѕРјРёР»РєР° Р·Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ РєРѕРЅС‚РµРЅС‚Сѓ', 'error');
+        showToast('Помилка завантаження контенту', 'error');
     }
 }
 
@@ -83,7 +83,7 @@ async function loadInquiries() {
         inquiries = Array.isArray(data.inquiries) ? data.inquiries : [];
         renderInquiries();
     } catch (err) {
-        showToast('РџРѕРјРёР»РєР° Р·Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ Р·РІРµСЂРЅРµРЅСЊ', 'error');
+        showToast('Помилка завантаження звернень', 'error');
     }
 }
 
@@ -147,16 +147,16 @@ async function saveContent() {
         if (res.status === 401) { logout(); return; }
 
         if (res.ok) {
-            showToast('вњ… Р—Р±РµСЂРµР¶РµРЅРѕ СѓСЃРїС–С€РЅРѕ!', 'success');
+            showToast('✅ Збережено успішно!', 'success');
         } else {
-            showToast('РџРѕРјРёР»РєР° Р·Р±РµСЂРµР¶РµРЅРЅСЏ', 'error');
+            showToast('Помилка збереження', 'error');
         }
     } catch (err) {
-        showToast('РџРѕРјРёР»РєР° Р·\'С”РґРЅР°РЅРЅСЏ', 'error');
+        showToast('Помилка з\'єднання', 'error');
     }
 }
 
-// в•ђв•ђв•ђ VALUES в•ђв•ђв•ђ
+// ═══ VALUES ═══
 function renderValues() {
     const container = document.getElementById('valuesContainer');
     if (!content.values) return;
@@ -164,24 +164,24 @@ function renderValues() {
         <div class="value-card">
             <div class="value-card__header">
                 <span class="value-card__num">${i + 1}</span>
-                Р¦С–РЅРЅС–СЃС‚СЊ #${i + 1}
+                Цінність #${i + 1}
             </div>
             <div class="field-row">
                 <div class="form-group">
-                    <label>РќР°Р·РІР° (UA)</label>
+                    <label>Назва (UA)</label>
                     <input type="text" data-value="${i}" data-vfield="title_ua" value="${escapeHtml(v.title_ua || '')}">
                 </div>
                 <div class="form-group">
-                    <label>РќР°Р·РІР° (EN)</label>
+                    <label>Назва (EN)</label>
                     <input type="text" data-value="${i}" data-vfield="title_en" value="${escapeHtml(v.title_en || '')}">
                 </div>
             </div>
             <div class="form-group">
-                <label>РћРїРёСЃ (UA)</label>
+                <label>Опис (UA)</label>
                 <textarea data-value="${i}" data-vfield="text_ua" rows="2">${escapeHtml(v.text_ua || '')}</textarea>
             </div>
             <div class="form-group">
-                <label>РћРїРёСЃ (EN)</label>
+                <label>Опис (EN)</label>
                 <textarea data-value="${i}" data-vfield="text_en" rows="2">${escapeHtml(v.text_en || '')}</textarea>
             </div>
         </div>
@@ -198,7 +198,7 @@ function collectValues() {
     });
 }
 
-// в•ђв•ђв•ђ NEWS в•ђв•ђв•ђ
+// ═══ NEWS ═══
 function renderNews() {
     const container = document.getElementById('newsContainer');
     if (!content.news) return;
@@ -206,35 +206,35 @@ function renderNews() {
         <div class="news-item">
             <div class="news-item__header">
                 <span class="news-item__number">${i + 1}</span>
-                <button class="btn btn-danger" onclick="removeNewsItem(${i})" style="padding: 6px 12px; font-size: 0.75rem;">рџ—‘пёЏ Р’РёРґР°Р»РёС‚Рё</button>
+                <button class="btn btn-danger" onclick="removeNewsItem(${i})" style="padding: 6px 12px; font-size: 0.75rem;">🗑️ Видалити</button>
             </div>
             <div class="field-row">
                 <div class="form-group">
-                    <label>Р—Р°РіРѕР»РѕРІРѕРє (UA)</label>
+                    <label>Заголовок (UA)</label>
                     <input type="text" data-news="${i}" data-nfield="title_ua" value="${escapeHtml(n.title_ua || '')}">
                 </div>
                 <div class="form-group">
-                    <label>Р—Р°РіРѕР»РѕРІРѕРє (EN)</label>
+                    <label>Заголовок (EN)</label>
                     <input type="text" data-news="${i}" data-nfield="title_en" value="${escapeHtml(n.title_en || '')}">
                 </div>
             </div>
             <div class="form-group">
-                <label>РўРµРєСЃС‚ (UA)</label>
+                <label>Текст (UA)</label>
                 <textarea data-news="${i}" data-nfield="text_ua" rows="2">${escapeHtml(n.text_ua || '')}</textarea>
             </div>
             <div class="form-group">
-                <label>РўРµРєСЃС‚ (EN)</label>
+                <label>Текст (EN)</label>
                 <textarea data-news="${i}" data-nfield="text_en" rows="2">${escapeHtml(n.text_en || '')}</textarea>
             </div>
             <div class="field-row">
                 <div class="form-group">
-                    <label>Р”Р°С‚Р°</label>
-                    <input type="text" data-news="${i}" data-nfield="date" value="${escapeHtml(n.date || '')}" placeholder="Р”Р”.РњРњ.Р Р Р Р ">
+                    <label>Дата</label>
+                    <input type="text" data-news="${i}" data-nfield="date" value="${escapeHtml(n.date || '')}" placeholder="ДД.ММ.РРРР">
                 </div>
                 <div class="form-group">
-                    <label>Р—РѕР±СЂР°Р¶РµРЅРЅСЏ</label>
+                    <label>Зображення</label>
                     <div class="image-upload" onclick="this.querySelector('input[type=file]').click()">
-                        ${n.image ? `<img src="/${escapeHtml(n.image)}" alt="preview">` : '<div class="placeholder"><span class="icon">рџ“·</span>РќР°С‚РёСЃРЅС–С‚СЊ РґР»СЏ Р·Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ</div>'}
+                        ${n.image ? `<img src="/${escapeHtml(n.image)}" alt="preview">` : '<div class="placeholder"><span class="icon">📷</span>Натисніть для завантаження</div>'}
                         <input type="file" accept="image/*" onchange="uploadNewsImage(${i}, this)">
                     </div>
                 </div>
@@ -248,16 +248,16 @@ function renderInquiries() {
     if (!container) return;
 
     if (!inquiries.length) {
-        container.innerHTML = '<div class="news-item">РџРѕРєРё С‰Рѕ РЅРѕРІРёС… Р·РІРµСЂРЅРµРЅСЊ РЅРµРјР°С”.</div>';
+        container.innerHTML = '<div class="news-item">Поки що нових звернень немає.</div>';
         return;
     }
 
     container.innerHTML = inquiries.map(item => `
         <div class="inquiry-item">
-            <h4>${escapeHtml(item.name || 'Р‘РµР· С–РјРµРЅС–')}</h4>
+            <h4>${escapeHtml(item.name || 'Без імені')}</h4>
             <div class="inquiry-item__meta">
                 <div>${escapeHtml(item.email || '')}</div>
-                <div>${escapeHtml(item.subject || 'Р‘РµР· С‚РµРјРё')}</div>
+                <div>${escapeHtml(item.subject || 'Без теми')}</div>
                 <div>${escapeHtml(item.createdAt || '')}</div>
             </div>
             <div class="inquiry-item__body">${escapeHtml(item.message || '')}</div>
@@ -278,7 +278,7 @@ function collectNews() {
 function addNewsItem() {
     if (!content.news) content.news = [];
     content.news.unshift({
-        title_ua: 'РќРѕРІР° РЅРѕРІРёРЅР°',
+        title_ua: 'Нова новина',
         title_en: 'New Article',
         text_ua: '',
         text_en: '',
@@ -289,7 +289,7 @@ function addNewsItem() {
 }
 
 function removeNewsItem(index) {
-    if (confirm('Р’РёРґР°Р»РёС‚Рё С†СЋ РЅРѕРІРёРЅСѓ?')) {
+    if (confirm('Видалити цю новину?')) {
         content.news.splice(index, 1);
         renderNews();
     }
@@ -313,21 +313,21 @@ async function uploadNewsImage(index, input) {
             const data = await res.json();
             content.news[index].image = data.path;
             renderNews();
-            showToast('рџ“· Р—РѕР±СЂР°Р¶РµРЅРЅСЏ Р·Р°РІР°РЅС‚Р°Р¶РµРЅРѕ', 'success');
+            showToast('📷 Зображення завантажено', 'success');
         }
     } catch (err) {
-        showToast('РџРѕРјРёР»РєР° Р·Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ С„Р°Р№Р»Сѓ', 'error');
+        showToast('Помилка завантаження файлу', 'error');
     }
 }
 
-// в•ђв•ђв•ђ NAVIGATION в•ђв•ђв•ђ
+// ═══ NAVIGATION ═══
 const sectionTitles = {
-    hero: 'Р“РѕР»РѕРІРЅРёР№ РµРєСЂР°РЅ',
-    about: 'РџСЂРѕ Р»С–С†РµР№',
-    values: 'Р¦С–РЅРЅРѕСЃС‚С–',
-    news: 'РќРѕРІРёРЅРё',
-    contacts: 'РљРѕРЅС‚Р°РєС‚Рё',
-    inquiries: 'Р—РІРµСЂРЅРµРЅРЅСЏ'
+    hero: 'Головний екран',
+    about: 'Про ліцей',
+    values: 'Цінності',
+    news: 'Новини',
+    contacts: 'Контакти',
+    inquiries: 'Звернення'
 };
 
 document.querySelectorAll('.sidebar__link[data-section]').forEach(link => {
@@ -351,7 +351,7 @@ document.querySelectorAll('.sidebar__link[data-section]').forEach(link => {
     });
 });
 
-// в•ђв•ђв•ђ TOAST в•ђв•ђв•ђ
+// ═══ TOAST ═══
 function showToast(message, type = 'success') {
     const toast = document.getElementById('toast');
     toast.textContent = message;
@@ -359,7 +359,7 @@ function showToast(message, type = 'success') {
     setTimeout(() => toast.classList.remove('show'), 3000);
 }
 
-// в•ђв•ђв•ђ KEYBOARD SHORTCUT в•ђв•ђв•ђ
+// ═══ KEYBOARD SHORTCUT ═══
 document.addEventListener('keydown', (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key === 's') {
         e.preventDefault();

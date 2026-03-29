@@ -22,7 +22,7 @@
             min-height: 100vh;
         }
 
-        /* в•ђв•ђв•ђ LOGIN SCREEN в•ђв•ђв•ђ */
+        /* LOGIN SCREEN */
         .login-screen {
             display: flex;
             align-items: center;
@@ -76,7 +76,7 @@
             display: none;
         }
 
-        /* в•ђв•ђв•ђ FORM ELEMENTS в•ђв•ђв•ђ */
+        /* FORM ELEMENTS */
         .form-group {
             margin-bottom: 20px;
             text-align: left;
@@ -161,7 +161,7 @@
 
         .btn-ghost:hover { background: var(--surface-hover); color: var(--text); }
 
-        /* в•ђв•ђв•ђ ADMIN LAYOUT в•ђв•ђв•ђ */
+        /* ADMIN LAYOUT */
         .admin { display: none; }
         .admin.active { display: flex; min-height: 100vh; }
 
@@ -274,7 +274,7 @@
         .toast.success { background: var(--success); color: #fff; }
         .toast.error { background: var(--danger); color: #fff; }
 
-        /* в•ђв•ђв•ђ SECTION PANELS в•ђв•ђв•ђ */
+        /* SECTION PANELS */
         .panel { display: none; }
         .panel.active { display: block; }
 
