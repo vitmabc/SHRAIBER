@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ліцей родини Шрайбер — Сучасна освіта у Білій Церкві</title>
+    <meta name="description" content="Білоцерківський корпоративний ліцей родини Шрайбер — сучасний заклад загальної середньої освіти. STEAM-освіта, індивідуальний підхід, інноваційне середовище.">
+    <meta name="keywords" content="ліцей, Шрайбер, Біла Церква, освіта, школа, STEAM, середня освіта">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ліцей родини Шрайбер — Сучасна освіта у Білій Церкві">
+    <meta property="og:description" content="Білоцерківський корпоративний ліцей родини Шрайбер — сучасний заклад загальної середньої освіти.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sflyceum.com/">
+    <meta property="og:image" content="images/hero-banner.png">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:locale:alternate" content="en_US">
+    
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="uk" href="https://www.sflyceum.com/">
+    <link rel="alternate" hreflang="en" href="https://www.sflyceum.com/?lang=en">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- NAVIGATION -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#hero" class="nav__logo" id="nav-logo">
+                <svg class="nav__logo-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Book base -->
+                    <path d="M6 36 L24 32 L42 36 L42 40 L24 36 L6 40 Z" fill="currentColor" opacity="0.7"/>
+                    <path d="M8 28 L24 24 L40 28 L40 36 L24 32 L8 36 Z" fill="currentColor" opacity="0.5"/>
+                    <!-- Star of David -->
+                    <polygon points="24,8 27,16 24,14 21,16" fill="#3AAFA9" opacity="0.9"/>
+                    <polygon points="24,22 21,14 24,16 27,14" fill="#3AAFA9" opacity="0.9"/>
+                    <polygon points="18,12 24,8 30,12 27,14 24,10 21,14" fill="#3AAFA9"/>
+                    <polygon points="18,18 21,16 24,20 27,16 30,18 24,22" fill="#3AAFA9"/>
+                    <!-- Three figures -->
+                    <circle cx="17" cy="6" r="2" fill="#2ECC71"/>
+                    <circle cx="24" cy="4" r="2" fill="#3AAFA9"/>
+                    <circle cx="31" cy="6" r="2" fill="#E8B931"/>
+                </svg>
+                <span class="nav__logo-text">
+                    <span class="nav__logo-name" data-i18n="logo_name">Ліцей Шрайбер</span>
+                </span>
+            </a>
+            
+            <ul class="nav__links" id="nav-links">
+                <li><a href="#about" class="nav__link" data-i18n="nav_about">Про ліцей</a></li>
+                <li><a href="#values" class="nav__link" data-i18n="nav_values">Цінності</a></li>
+                <li><a href="#education" class="nav__link" data-i18n="nav_education">Освіта</a></li>
+                <li><a href="#news" class="nav__link" data-i18n="nav_news">Новини</a></li>
+                <li><a href="#gallery" class="nav__link" data-i18n="nav_gallery">Галерея</a></li>
+                <li><a href="#contacts" class="nav__link" data-i18n="nav_contacts">Контакти</a></li>
+            </ul>
+
+            <div class="nav__actions">
+                <button class="lang-switch" id="lang-switch" aria-label="Switch language">
+                    <span class="lang-switch__current">UA</span>
+                    <span class="lang-switch__divider">|</span>
+                    <span class="lang-switch__other">EN</span>
+                </button>
+                <a href="#contacts" class="nav__cta" data-i18n="nav_cta">Зв'язатися</a>
+                <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Fullscreen Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay">
+        <div class="menu-overlay__content">
+            <ul class="menu-overlay__links">
+                <li><a href="#hero" class="menu-overlay__link" data-i18n="nav_home">Головна</a></li>
+                <li><a href="#about" class="menu-overlay__link" data-i18n="nav_about">Про ліцей</a></li>
+                <li><a href="#values" class="menu-overlay__link" data-i18n="nav_values">Цінності</a></li>
+                <li><a href="#education" class="menu-overlay__link" data-i18n="nav_education">Освіта</a></li>
+                <li><a href="#news" class="menu-overlay__link" data-i18n="nav_news">Новини</a></li>
+                <li><a href="#gallery" class="menu-overlay__link" data-i18n="nav_gallery">Галерея</a></li>
+                <li><a href="#contacts" class="menu-overlay__link" data-i18n="nav_contacts">Контакти</a></li>
+            </ul>
+            <div class="menu-overlay__info">
+                <a href="tel:+380937488849" class="menu-overlay__phone" data-contact-phone>+38 093 748 88 49</a>
+                <a href="mailto:sf.lyceum@gmail.com" class="menu-overlay__email" data-contact-email>sf.lyceum@gmail.com</a>
+                <div class="menu-overlay__social">
+                    <a href="https://www.instagram.com/schreiber_family_school/" target="_blank" rel="noopener" aria-label="Instagram" data-contact-instagram>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- HERO SECTION -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <img src="images/lyceum-real.jpg" alt="Ліцей родини Шрайбер — сучасна будівля" class="hero__bg-img" loading="eager">
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__content">
+            <p class="hero__subtitle animate-on-scroll" data-i18n="hero_subtitle">Білоцерківський корпоративний ліцей</p>
+            <h1 class="hero__title animate-on-scroll">
+                <span class="hero__title-line" data-i18n="hero_title_1">ОСВІТА</span>
+                <span class="hero__title-line hero__title-line--accent" data-i18n="hero_title_2">НОВОГО</span>
+                <span class="hero__title-line" data-i18n="hero_title_3">ПОКОЛІННЯ</span>
+            </h1>
+            <p class="hero__description animate-on-scroll" data-i18n="hero_description">Інноваційний підхід до навчання з індивідуальною увагою до кожного учня. STEAM-освіта, сучасні технології та цінності, що формують лідерів майбутнього.</p>
+            <div class="hero__actions animate-on-scroll">
+                <a href="#about" class="btn btn--primary" data-i18n="hero_btn_about">Дізнатися більше</a>
+                <a href="#contacts" class="btn btn--outline" data-i18n="hero_btn_contact">Зв'язатися</a>
+            </div>
+        </div>
+        <div class="hero__scroll-indicator">
+            <span data-i18n="hero_scroll">Прокрутіть вниз</span>
+            <div class="hero__scroll-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- ABOUT SECTION -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__content">
+                    <span class="section__label animate-on-scroll" data-i18n="about_label">ПРО НАС</span>
+                    <h2 class="section__title animate-on-scroll" data-i18n="about_title">Ліцей родини Шрайбер</h2>
+                    <p class="about__text animate-on-scroll" data-i18n="about_text_1">
+                        Білоцерківський корпоративний ліцей родини Шрайбер — це сучасний заклад загальної середньої освіти, заснований у 2024 році. Ми поєднуємо найкращі освітні традиції з інноваційними підходами, створюючи середовище, де кожна дитина розкриває свій потенціал.
+                    </p>
+                    <p class="about__text animate-on-scroll" data-i18n="about_text_2">
+                        Наш ліцей — це місце, де освіта стає захоплюючою пригодою. Ми використовуємо STEAM-підхід, поєднуючи науку, технології, інженерію, мистецтво та математику для всебічного розвитку учнів.
+                    </p>
+                    <div class="about__stats animate-on-scroll">
+                        <div class="about__stat">
+                            <span class="about__stat-number" data-count="15">0</span>
+                            <span class="about__stat-label" data-i18n="about_stat_1">учнів у класі</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number" data-count="3">0</span>
+                            <span class="about__stat-label" data-i18n="about_stat_2">мови навчання</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number" data-count="100">0</span>
+                            <span class="about__stat-label" data-i18n="about_stat_3">% індивідуальний підхід</span>
+                        </div>
+                    </div>
+                    <div class="about__documents animate-on-scroll">
+                        <a href="https://drive.google.com/file/d/17CI7GVcGHrdvCIB6UqS0aHMQ5hOA9zvR/view?usp=sharing" target="_blank" rel="noopener" class="about__doc-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            <span data-i18n="about_license">Ліцензія</span>
+                        </a>
+                        <a href="https://drive.google.com/file/d/19gTDLlk1RjeLMx07Fg96riGyUPPLuFCV/view?usp=sharing" target="_blank" rel="noopener" class="about__doc-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            <span data-i18n="about_statute">Статут закладу</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="about__images animate-on-scroll">
+                    <div class="about__image-wrapper about__image-wrapper--main">
+                        <img src="images/lyceum-real.jpg" alt="Сучасна будівля ліцею родини Шрайбер" loading="lazy">
+                    </div>
+                    <div class="about__image-wrapper about__image-wrapper--secondary">
+                        <img src="images/lyceum-lab.png" alt="Наукова лабораторія ліцею" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- VALUES SECTION -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="values section section--dark" id="values">
+        <div class="container">
+            <span class="section__label section__label--light animate-on-scroll" data-i18n="values_label">НАШІ ЦІННОСТІ</span>
+            <h2 class="section__title section__title--light animate-on-scroll" data-i18n="values_title">Що робить нас особливими</h2>
+            
+            <div class="values__grid">
+                <div class="values__card animate-on-scroll">
+                    <span class="values__number">01</span>
+                    <div class="values__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <h3 class="values__card-title" data-i18n="value_1_title">Академічна досконалість</h3>
+                    <p class="values__card-text" data-i18n="value_1_text">Високі стандарти навчання з індивідуальним підходом. Маленькі класи дозволяють приділяти увагу кожному учню.</p>
+                </div>
+                
+                <div class="values__card animate-on-scroll">
+                    <span class="values__number">02</span>
+                    <div class="values__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <h3 class="values__card-title" data-i18n="value_2_title">Інноваційні технології</h3>
+                    <p class="values__card-text" data-i18n="value_2_text">STEAM-підхід, цифрові інструменти та сучасне обладнання. Ми готуємо учнів до викликів майбутнього.</p>
+                </div>
+                
+                <div class="values__card animate-on-scroll">
+                    <span class="values__number">03</span>
+                    <div class="values__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3 class="values__card-title" data-i18n="value_3_title">Спільнота та цінності</h3>
+                    <p class="values__card-text" data-i18n="value_3_text">Повага, відповідальність і взаємопідтримка. Ми формуємо не лише знання, а й характер.</p>
+                </div>
+                
+                <div class="values__card animate-on-scroll">
+                    <span class="values__number">04</span>
+                    <div class="values__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h3 class="values__card-title" data-i18n="value_4_title">Культурне різноманіття</h3>
+                    <p class="values__card-text" data-i18n="value_4_text">Навчання українською, англійською та івритом. Відкритість до світу та збереження традицій.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- EDUCATION SECTION -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="education section" id="education">
+        <div class="container">
+            <span class="section__label animate-on-scroll" data-i18n="edu_label">ОСВІТНІЙ ПРОЦЕС</span>
+            <h2 class="section__title animate-on-scroll" data-i18n="edu_title">Як ми навчаємо</h2>
+            
+            <div class="education__grid">
+                <div class="education__card animate-on-scroll">
+                    <div class="education__card-image">
+                        <img src="images/lyceum-lab.png" alt="Наукова лабораторія — STEAM освіта" loading="lazy">
+                    </div>
+                    <div class="education__card-content">
+                        <span class="education__card-tag" data-i18n="edu_tag_1">STEAM</span>
+                        <h3 class="education__card-title" data-i18n="edu_card_1_title">Інтегрований STEAM-підхід</h3>
+                        <p class="education__card-text" data-i18n="edu_card_1_text">Поєднуємо науку, технології, інженерію, мистецтво та математику в єдину захоплюючу програму навчання.</p>
+                    </div>
+                </div>
+                
+                <div class="education__card animate-on-scroll">
+                    <div class="education__card-image">
+                        <img src="images/lyceum-computer.png" alt="Комп'ютерний клас ліцею" loading="lazy">
+                    </div>
+                    <div class="education__card-content">
+                        <span class="education__card-tag" data-i18n="edu_tag_2">Педагогіка</span>
+                        <h3 class="education__card-title" data-i18n="edu_card_2_title">Індивідуальна траєкторія</h3>
+                        <p class="education__card-text" data-i18n="edu_card_2_text">Кожен учень — унікальний. Ми створюємо персональний план розвитку, враховуючи інтереси та здібності дитини.</p>
+                    </div>
+                </div>
+                
+                <div class="education__card animate-on-scroll">
+                    <div class="education__card-image">
+                        <img src="images/lyceum-real.jpg" alt="Сучасне освітнє середовище" loading="lazy">
+                    </div>
+                    <div class="education__card-content">
+                        <span class="education__card-tag" data-i18n="edu_tag_3">Середовище</span>
+                        <h3 class="education__card-title" data-i18n="edu_card_3_title">Сучасний простір</h3>
+                        <p class="education__card-text" data-i18n="edu_card_3_text">Обладнані класи, сучасна техніка, комфортні зони для навчання та відпочинку — все для ефективного розвитку.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education__documents animate-on-scroll">
+                <h3 class="education__doc-title" data-i18n="edu_doc_title">Документи</h3>
+                <div class="education__doc-grid">
+                    <a href="https://drive.google.com/file/d/1EjdhsIX1cSEfDGsRnwxO3V6lpfsRbi8C/view?usp=sharing" target="_blank" rel="noopener" class="education__doc-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                        <span data-i18n="edu_doc_1">Наказ про зарахування до 1 класу 2025/2026 н.р.</span>
+                    </a>
+                    <a href="https://www.sflyceum.com/certification-2026/" target="_blank" rel="noopener" class="education__doc-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                        <span data-i18n="edu_doc_2">Атестація педпрацівників 2026 р.</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- NEWS SECTION -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="news section section--alt" id="news">
+        <div class="container">
+            <span class="section__label animate-on-scroll" data-i18n="news_label">НОВИНИ</span>
+            <h2 class="section__title animate-on-scroll" data-i18n="news_title">Останні події</h2>
+            
+            <div class="news__grid">
+                <article class="news__card news__card--featured animate-on-scroll">
+                    <div class="news__card-image">
+                        <img src="images/students-outdoor.png" alt="Учні ліцею на свіжому повітрі" loading="lazy">
+                        <span class="news__card-date">15.03.2026</span>
+                    </div>
+                    <div class="news__card-content">
+                        <span class="news__card-tag" data-i18n="news_tag_event">Подія</span>
+                        <h3 class="news__card-title" data-i18n="news_1_title">День відкритих дверей 2026</h3>
+                        <p class="news__card-text" data-i18n="news_1_text">Запрошуємо батьків та майбутніх учнів познайомитися з нашим ліцеєм, навчальними програмами та педагогічним колективом. Ви зможете побачити наші сучасні класи та поставити питання.</p>
+                        <a href="#" class="news__card-link" data-i18n="news_read_more">Читати далі →</a>
+                    </div>
+                </article>
+                
+                <article class="news__card animate-on-scroll">
+                    <div class="news__card-image">
+                        <img src="images/lyceum-computer.png" alt="Комп'ютерний клас ліцею" loading="lazy">
+                        <span class="news__card-date">01.03.2026</span>
+                    </div>
+                    <div class="news__card-content">
+                        <span class="news__card-tag" data-i18n="news_tag_education">Освіта</span>
+                        <h3 class="news__card-title" data-i18n="news_2_title">STEAM-тиждень: наука та творчість</h3>
+                        <p class="news__card-text" data-i18n="news_2_text">Учні презентували свої проєкти на перетині науки й мистецтва. Від робототехніки до цифрового живопису.</p>
+                        <a href="#" class="news__card-link" data-i18n="news_read_more">Читати далі →</a>
+                    </div>
+                </article>
+                
+                <article class="news__card animate-on-scroll">
+                    <div class="news__card-image">
+                        <img src="images/lyceum-real.jpg" alt="Ліцей отримав ліцензію" loading="lazy">
+                        <span class="news__card-date">19.12.2024</span>
+                    </div>
+                    <div class="news__card-content">
+                        <span class="news__card-tag" data-i18n="news_tag_official">Офіційно</span>
+                        <h3 class="news__card-title" data-i18n="news_3_title">Ліцей отримав державну ліцензію</h3>
+                        <p class="news__card-text" data-i18n="news_3_text">Ліцей родини Шрайбер офіційно зареєстрований та отримав ліцензію на провадження освітньої діяльності.</p>
+                        <a href="#" class="news__card-link" data-i18n="news_read_more">Читати далі →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- GALLERY SECTION -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <span class="section__label animate-on-scroll" data-i18n="gallery_label">ГАЛЕРЕЯ</span>
+            <h2 class="section__title animate-on-scroll" data-i18n="gallery_title">Наше життя</h2>
+            
+            <div class="gallery__grid animate-on-scroll">
+                <div class="gallery__item gallery__item--wide">
+                    <img src="images/lyceum-real.jpg" alt="Ліцей родини Шрайбер — кампус" loading="lazy">
+                    <div class="gallery__item-overlay">
+                        <span data-i18n="gallery_campus">Наш кампус</span>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <img src="images/lyceum-lab.png" alt="Наукова лабораторія" loading="lazy">
+                    <div class="gallery__item-overlay">
+                        <span data-i18n="gallery_learning">Навчання</span>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <img src="images/lyceum-computer.png" alt="Комп'ютерний клас" loading="lazy">
+                    <div class="gallery__item-overlay">
+                        <span data-i18n="gallery_teachers">Педагоги</span>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <img src="images/lyceum-music.png" alt="Музична студія" loading="lazy">
+                    <div class="gallery__item-overlay">
+                        <span data-i18n="gallery_life">Шкільне життя</span>
+                    </div>
+                </div>
+                <div class="gallery__item gallery__item--tall">
+                    <img src="images/lyceum-real.jpg" alt="Будівля ліцею" loading="lazy">
+                    <div class="gallery__item-overlay">
+                        <span data-i18n="gallery_building">Будівля</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- CONTACTS SECTION -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="contacts section section--dark" id="contacts">
+        <div class="container">
+            <span class="section__label section__label--light animate-on-scroll" data-i18n="contacts_label">КОНТАКТИ</span>
+            <h2 class="section__title section__title--light animate-on-scroll" data-i18n="contacts_title">Зв'яжіться з нами</h2>
+            
+            <div class="contacts__grid">
+                <div class="contacts__info animate-on-scroll">
+                    <div class="contacts__info-card">
+                        <div class="contacts__info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <h4 data-i18n="contacts_address_title">Адреса</h4>
+                            <p id="contact-address">вул. Павла Скоропадського, 4<br>м. Біла Церква, Київська обл.<br>09107, Україна</p>
+                        </div>
+                    </div>
+                    <div class="contacts__info-card">
+                        <div class="contacts__info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <h4 data-i18n="contacts_phone_title">Телефон</h4>
+                            <a href="tel:+380937488849" data-contact-phone>+38 093 748 88 49</a>
+                        </div>
+                    </div>
+                    <div class="contacts__info-card">
+                        <div class="contacts__info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:sf.lyceum@gmail.com" data-contact-email>sf.lyceum@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contacts__info-card">
+                        <div class="contacts__info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </div>
+                        <div>
+                            <h4>Instagram</h4>
+                            <a href="https://www.instagram.com/schreiber_family_school/" target="_blank" rel="noopener" id="contact-instagram-link" data-contact-instagram>@schreiber_family_school</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Google Map -->
+                    <div class="contacts__map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.122658086562!2d30.11969227658639!3d49.80367553372156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d3421615254293%3A0x1fe39509ab3c3725!2sBilotserkivs%CA%B9kyy%20Korporatyvnyy%20Litsey%20Rodyny%20Shrayber!5e1!3m2!1suk!2sua!4v1774808113454!5m2!1suk!2sua"
+                            width="100%" height="250" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта розташування ліцею">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <div class="contacts__form-wrapper animate-on-scroll">
+                    <h3 class="contacts__form-title" data-i18n="contacts_form_title">Напишіть нам</h3>
+                    <form class="contacts__form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="contact-name" data-i18n="form_name">Ім'я *</label>
+                            <input type="text" id="contact-name" name="name" required placeholder=" ">
+                            <span class="form-error" data-i18n="form_name_error">Будь ласка, введіть ваше ім'я</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email" data-i18n="form_email">Email *</label>
+                            <input type="email" id="contact-email" name="email" required placeholder=" ">
+                            <span class="form-error" data-i18n="form_email_error">Введіть коректний email</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject" data-i18n="form_subject">Тема</label>
+                            <select id="contact-subject" name="subject">
+                                <option value="" data-i18n="form_subject_default">Оберіть тему</option>
+                                <option value="admission" data-i18n="form_subject_admission">Вступ до ліцею</option>
+                                <option value="general" data-i18n="form_subject_general">Загальне питання</option>
+                                <option value="cooperation" data-i18n="form_subject_cooperation">Співпраця</option>
+                                <option value="other" data-i18n="form_subject_other">Інше</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="display:none;">
+                            <label for="contact-website">Website</label>
+                            <input type="text" id="contact-website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message" data-i18n="form_message">Повідомлення *</label>
+                            <textarea id="contact-message" name="message" rows="5" required placeholder=" "></textarea>
+                            <span class="form-error" data-i18n="form_message_error">Будь ласка, введіть повідомлення</span>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full" id="contact-submit" data-i18n="form_submit">Надіслати</button>
+                        <p class="contacts__form-note" data-i18n="form_note">* Обов'язкові поля. Ваші дані захищені та не передаються третім особам.</p>
+                        <p class="contacts__form-note" id="contact-form-status" hidden></p>
+                    </form>
+                    <div class="contacts__form-success" id="form-success" style="display:none;">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <h3 data-i18n="form_success_title">Дякуємо!</h3>
+                        <p data-i18n="form_success_text">Ваше повідомлення надіслано. Ми зв'яжемося з вами найближчим часом.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- FOOTER -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#hero" class="footer__logo">
+                        <svg class="footer__logo-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 36 L24 32 L42 36 L42 40 L24 36 L6 40 Z" fill="currentColor" opacity="0.7"/>
+                            <path d="M8 28 L24 24 L40 28 L40 36 L24 32 L8 36 Z" fill="currentColor" opacity="0.5"/>
+                            <polygon points="18,12 24,8 30,12 27,14 24,10 21,14" fill="#3AAFA9"/>
+                            <polygon points="18,18 21,16 24,20 27,16 30,18 24,22" fill="#3AAFA9"/>
+                            <circle cx="17" cy="6" r="2" fill="#2ECC71"/>
+                            <circle cx="24" cy="4" r="2" fill="#3AAFA9"/>
+                            <circle cx="31" cy="6" r="2" fill="#E8B931"/>
+                        </svg>
+                        <span data-i18n="footer_name">Ліцей родини Шрайбер</span>
+                    </a>
+                    <p class="footer__description" data-i18n="footer_description">Білоцерківський корпоративний ліцей родини Шрайбер — сучасний заклад загальної середньої освіти з інноваційним підходом.</p>
+                </div>
+                
+                <div class="footer__nav">
+                    <h4 data-i18n="footer_nav_title">Навігація</h4>
+                    <ul>
+                        <li><a href="#about" data-i18n="nav_about">Про ліцей</a></li>
+                        <li><a href="#values" data-i18n="nav_values">Цінності</a></li>
+                        <li><a href="#education" data-i18n="nav_education">Освіта</a></li>
+                        <li><a href="#news" data-i18n="nav_news">Новини</a></li>
+                        <li><a href="#contacts" data-i18n="nav_contacts">Контакти</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__docs">
+                    <h4 data-i18n="footer_docs_title">Документи</h4>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/17CI7GVcGHrdvCIB6UqS0aHMQ5hOA9zvR/view?usp=sharing" target="_blank" rel="noopener" data-i18n="about_license">Ліцензія</a></li>
+                        <li><a href="https://drive.google.com/file/d/19gTDLlk1RjeLMx07Fg96riGyUPPLuFCV/view?usp=sharing" target="_blank" rel="noopener" data-i18n="about_statute">Статут закладу</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__contacts">
+                    <h4 data-i18n="contacts_label">Контакти</h4>
+                    <ul>
+                        <li><a href="tel:+380937488849" data-contact-phone>+38 093 748 88 49</a></li>
+                        <li><a href="mailto:sf.lyceum@gmail.com" data-contact-email>sf.lyceum@gmail.com</a></li>
+                        <li>
+                            <a href="https://maps.app.goo.gl/3BX2inUMn8Jg95Jy5" target="_blank" rel="noopener" id="footer-address-link">
+                                <span id="footer-address">вул. Скоропадського, 4<br>Біла Церква, 09107</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/schreiber_family_school/" target="_blank" rel="noopener" aria-label="Instagram" data-contact-instagram>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 <span data-i18n="footer_copyright">Білоцерківський корпоративний ліцей родини Шрайбер. Усі права захищені.</span></p>
+                <p class="footer__edrpou">ЄДРПОУ: 45708497</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

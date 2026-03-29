@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РђРґРјС–РЅ-РїР°РЅРµР»СЊ вЂ” Р›С–С†РµР№ РЁСЂР°Р№Р±РµСЂ</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+
+<!-- в•ђв•ђв•ђ LOGIN в•ђв•ђв•ђ -->
+<div class="login-screen" id="loginScreen">
+    <div class="login-card">
+        <div class="logo-icon">рџ“љ</div>
+        <h1>РђРґРјС–РЅ-РїР°РЅРµР»СЊ</h1>
+        <p>Р›С–С†РµР№ СЂРѕРґРёРЅРё РЁСЂР°Р№Р±РµСЂ</p>
+        <div class="login-error" id="loginError">РќРµРІС–СЂРЅРёР№ РїР°СЂРѕР»СЊ</div>
+        <form id="loginForm">
+            <div class="form-group">
+                <label>РџР°СЂРѕР»СЊ</label>
+                <input type="password" id="loginPassword" placeholder="Р’РІРµРґС–С‚СЊ РїР°СЂРѕР»СЊ" required autofocus>
+            </div>
+            <button type="submit" class="btn btn-primary">РЈРІС–Р№С‚Рё</button>
+        </form>
+    </div>
+</div>
+
+<!-- в•ђв•ђв•ђ ADMIN PANEL в•ђв•ђв•ђ -->
+<div class="admin" id="adminPanel">
+    <aside class="sidebar">
+        <div class="sidebar__logo">
+            <h2><span>рџ“љ</span> РђРґРјС–РЅ-РїР°РЅРµР»СЊ</h2>
+            <small>Р›С–С†РµР№ РЁСЂР°Р№Р±РµСЂ</small>
+        </div>
+        <nav class="sidebar__nav">
+            <a class="sidebar__link active" data-section="hero">
+                <span class="icon">рџЏ </span> Р“РѕР»РѕРІРЅРёР№ РµРєСЂР°РЅ
+            </a>
+            <a class="sidebar__link" data-section="about">
+                <span class="icon">в„№пёЏ</span> РџСЂРѕ Р»С–С†РµР№
+            </a>
+            <a class="sidebar__link" data-section="values">
+                <span class="icon">в­ђ</span> Р¦С–РЅРЅРѕСЃС‚С–
+            </a>
+            <a class="sidebar__link" data-section="news">
+                <span class="icon">рџ“°</span> РќРѕРІРёРЅРё
+            </a>
+            <a class="sidebar__link" data-section="contacts">
+                <span class="icon">рџ“ћ</span> РљРѕРЅС‚Р°РєС‚Рё
+            </a>
+            <a class="sidebar__link" data-section="inquiries">
+                <span class="icon">рџ“Ё</span> Р—РІРµСЂРЅРµРЅРЅСЏ
+            </a>
+        </nav>
+        <div class="sidebar__footer">
+            <a href="/" target="_blank" class="preview-link" style="margin-bottom: 12px; display: block;">рџ”— РџРµСЂРµРіР»СЏРЅСѓС‚Рё СЃР°Р№С‚</a>
+            <button class="btn btn-ghost" onclick="logout()">Р’РёР№С‚Рё</button>
+        </div>
+    </aside>
+
+    <main class="main">
+        <div class="main__header">
+            <h1 id="sectionTitle">Р“РѕР»РѕРІРЅРёР№ РµРєСЂР°РЅ</h1>
+            <div style="display: flex; gap: 12px;">
+                <button class="btn btn-save" onclick="saveContent()">рџ’ѕ Р—Р±РµСЂРµРіС‚Рё</button>
+            </div>
+        </div>
+
+        <div class="status-bar">
+            <span class="dot"></span>
+            РЎР°Р№С‚ РїСЂР°С†СЋС”. Р—РјС–РЅРё Р·'СЏРІР»СЏС‚СЊСЃСЏ РїС–СЃР»СЏ Р·Р±РµСЂРµР¶РµРЅРЅСЏ С‚Р° РѕРЅРѕРІР»РµРЅРЅСЏ СЃС‚РѕСЂС–РЅРєРё.
+        </div>
+
+        <!-- в•ђв•ђв•ђ HERO в•ђв•ђв•ђ -->
+        <div class="panel active" id="panel-hero">
+            <div class="card">
+                <div class="card__title">рџЋЇ Р—Р°РіРѕР»РѕРІРѕРє (Hero)</div>
+                <div class="form-group">
+                    <label>РџС–РґР·Р°РіРѕР»РѕРІРѕРє (UA)</label>
+                    <input type="text" data-field="hero.subtitle_ua">
+                </div>
+                <div class="form-group">
+                    <label>РџС–РґР·Р°РіРѕР»РѕРІРѕРє (EN)</label>
+                    <input type="text" data-field="hero.subtitle_en">
+                </div>
+                <div class="field-row three">
+                    <div class="form-group">
+                        <label>Р СЏРґРѕРє 1 (UA)</label>
+                        <input type="text" data-field="hero.title_line1_ua">
+                    </div>
+                    <div class="form-group">
+                        <label>РђРєС†РµРЅС‚ (UA)</label>
+                        <input type="text" data-field="hero.title_accent_ua">
+                    </div>
+                    <div class="form-group">
+                        <label>Р СЏРґРѕРє 2 (UA)</label>
+                        <input type="text" data-field="hero.title_line2_ua">
+                    </div>
+                </div>
+                <div class="field-row three">
+                    <div class="form-group">
+                        <label>Р СЏРґРѕРє 1 (EN)</label>
+                        <input type="text" data-field="hero.title_line1_en">
+                    </div>
+                    <div class="form-group">
+                        <label>РђРєС†РµРЅС‚ (EN)</label>
+                        <input type="text" data-field="hero.title_accent_en">
+                    </div>
+                    <div class="form-group">
+                        <label>Р СЏРґРѕРє 2 (EN)</label>
+                        <input type="text" data-field="hero.title_line2_en">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__title">рџ“ќ РћРїРёСЃ С‚Р° РєРЅРѕРїРєРё</div>
+                <div class="form-group">
+                    <label>РћРїРёСЃ (UA)</label>
+                    <textarea data-field="hero.description_ua" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>РћРїРёСЃ (EN)</label>
+                    <textarea data-field="hero.description_en" rows="3"></textarea>
+                </div>
+                <div class="field-row">
+                    <div class="form-group">
+                        <label>РљРЅРѕРїРєР° 1 (UA / EN)</label>
+                        <input type="text" data-field="hero.cta_primary_ua" style="margin-bottom:8px">
+                        <input type="text" data-field="hero.cta_primary_en">
+                    </div>
+                    <div class="form-group">
+                        <label>РљРЅРѕРїРєР° 2 (UA / EN)</label>
+                        <input type="text" data-field="hero.cta_secondary_ua" style="margin-bottom:8px">
+                        <input type="text" data-field="hero.cta_secondary_en">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- в•ђв•ђв•ђ ABOUT в•ђв•ђв•ђ -->
+        <div class="panel" id="panel-about">
+            <div class="card">
+                <div class="card__title">в„№пёЏ РЎРµРєС†С–СЏ "РџСЂРѕ Р»С–С†РµР№"</div>
+                <div class="field-row">
+                    <div class="form-group">
+                        <label>Р—Р°РіРѕР»РѕРІРѕРє (UA)</label>
+                        <input type="text" data-field="about.title_ua">
+                    </div>
+                    <div class="form-group">
+                        <label>Р—Р°РіРѕР»РѕРІРѕРє (EN)</label>
+                        <input type="text" data-field="about.title_en">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>РўРµРєСЃС‚ (UA)</label>
+                    <textarea data-field="about.text_ua" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>РўРµРєСЃС‚ (EN)</label>
+                    <textarea data-field="about.text_en" rows="4"></textarea>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__title">рџ“Љ РЎС‚Р°С‚РёСЃС‚РёРєР°</div>
+                <div class="field-row three">
+                    <div class="form-group">
+                        <label>Р§РёСЃР»Рѕ 1</label>
+                        <input type="text" data-field="about.stat1_value">
+                        <input type="text" data-field="about.stat1_label_ua" placeholder="РџС–РґРїРёСЃ UA" style="margin-top:8px">
+                        <input type="text" data-field="about.stat1_label_en" placeholder="РџС–РґРїРёСЃ EN" style="margin-top:8px">
+                    </div>
+                    <div class="form-group">
+                        <label>Р§РёСЃР»Рѕ 2</label>
+                        <input type="text" data-field="about.stat2_value">
+                        <input type="text" data-field="about.stat2_label_ua" placeholder="РџС–РґРїРёСЃ UA" style="margin-top:8px">
+                        <input type="text" data-field="about.stat2_label_en" placeholder="РџС–РґРїРёСЃ EN" style="margin-top:8px">
+                    </div>
+                    <div class="form-group">
+                        <label>Р§РёСЃР»Рѕ 3</label>
+                        <input type="text" data-field="about.stat3_value">
+                        <input type="text" data-field="about.stat3_label_ua" placeholder="РџС–РґРїРёСЃ UA" style="margin-top:8px">
+                        <input type="text" data-field="about.stat3_label_en" placeholder="РџС–РґРїРёСЃ EN" style="margin-top:8px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- в•ђв•ђв•ђ VALUES в•ђв•ђв•ђ -->
+        <div class="panel" id="panel-values">
+            <div class="card">
+                <div class="card__title">в­ђ Р¦С–РЅРЅРѕСЃС‚С– Р»С–С†РµСЋ (4 РєР°СЂС‚РѕС‡РєРё)</div>
+                <div id="valuesContainer"></div>
+            </div>
+        </div>
+
+        <!-- в•ђв•ђв•ђ NEWS в•ђв•ђв•ђ -->
+        <div class="panel" id="panel-news">
+            <div class="card">
+                <div class="card__title">рџ“° РќРѕРІРёРЅРё</div>
+                <div id="newsContainer"></div>
+                <button class="btn btn-ghost" onclick="addNewsItem()" style="margin-top: 12px;">
+                    + Р”РѕРґР°С‚Рё РЅРѕРІРёРЅСѓ
+                </button>
+            </div>
+        </div>
+
+        <!-- в•ђв•ђв•ђ CONTACTS в•ђв•ђв•ђ -->
+        <div class="panel" id="panel-contacts">
+            <div class="card">
+                <div class="card__title">рџ“ћ РљРѕРЅС‚Р°РєС‚РЅР° С–РЅС„РѕСЂРјР°С†С–СЏ</div>
+                <div class="form-group">
+                    <label>РђРґСЂРµСЃР° (UA)</label>
+                    <textarea data-field="contacts.address_ua" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>РђРґСЂРµСЃР° (EN)</label>
+                    <textarea data-field="contacts.address_en" rows="3"></textarea>
+                </div>
+                <div class="field-row">
+                    <div class="form-group">
+                        <label>РўРµР»РµС„РѕРЅ</label>
+                        <input type="text" data-field="contacts.phone">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" data-field="contacts.email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Instagram URL</label>
+                    <input type="text" data-field="contacts.instagram">
+                </div>
+            </div>
+        </div>
+
+        <div class="panel" id="panel-inquiries">
+            <div class="card">
+                <div class="card__title">рџ“Ё Р—Р°СЏРІРєРё Р· С„РѕСЂРјРё</div>
+                <div id="inquiriesContainer"></div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="/admin/admin.js"></script>
+
+</body>
+</html>
+

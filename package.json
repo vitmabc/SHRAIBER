@@ -1,0 +1,16 @@
+{
+  "name": "sflyceum",
+  "version": "1.0.0",
+  "description": "Білоцерківський корпоративний ліцей родини Шрайбер — офіційний сайт",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js",
+    "postinstall": "npm run build"
+  },
+  "devDependencies": {
+    "vite": "^6.3.2"
+  }
+}
