@@ -78,13 +78,33 @@
         <div class="panel active" id="panel-hero">
             <div class="card">
                 <div class="card__title">🎯 Заголовок (Hero)</div>
-                <div class="form-group">
-                    <label>Підзаголовок (UA)</label>
-                    <input type="text" data-field="hero.subtitle_ua">
+                <div class="field-row">
+                    <div class="form-group">
+                        <label>Назва логотипа (UA)</label>
+                        <input type="text" data-field="hero.logo_name_ua">
+                    </div>
+                    <div class="form-group">
+                        <label>Назва логотипа (EN)</label>
+                        <input type="text" data-field="hero.logo_name_en">
+                    </div>
+                    <div class="form-group">
+                        <label>Назва логотипа (HE)</label>
+                        <input type="text" data-field="hero.logo_name_he" dir="rtl">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>Підзаголовок (EN)</label>
-                    <input type="text" data-field="hero.subtitle_en">
+                <div class="field-row three">
+                    <div class="form-group">
+                        <label>Підзаголовок (UA)</label>
+                        <input type="text" data-field="hero.subtitle_ua">
+                    </div>
+                    <div class="form-group">
+                        <label>Підзаголовок (EN)</label>
+                        <input type="text" data-field="hero.subtitle_en">
+                    </div>
+                    <div class="form-group">
+                        <label>Підзаголовок (HE)</label>
+                        <input type="text" data-field="hero.subtitle_he" dir="rtl">
+                    </div>
                 </div>
                 <div class="field-row three">
                     <div class="form-group">
@@ -114,6 +134,20 @@
                         <input type="text" data-field="hero.title_line2_en">
                     </div>
                 </div>
+                <div class="field-row three">
+                    <div class="form-group">
+                        <label>Рядок 1 (HE)</label>
+                        <input type="text" data-field="hero.title_line1_he" dir="rtl">
+                    </div>
+                    <div class="form-group">
+                        <label>Акцент (HE)</label>
+                        <input type="text" data-field="hero.title_accent_he" dir="rtl">
+                    </div>
+                    <div class="form-group">
+                        <label>Рядок 2 (HE)</label>
+                        <input type="text" data-field="hero.title_line2_he" dir="rtl">
+                    </div>
+                </div>
             </div>
 
             <div class="card">
@@ -126,16 +160,22 @@
                     <label>Опис (EN)</label>
                     <textarea data-field="hero.description_en" rows="3"></textarea>
                 </div>
+                <div class="form-group">
+                    <label>Опис (HE)</label>
+                    <textarea data-field="hero.description_he" rows="3" dir="rtl"></textarea>
+                </div>
                 <div class="field-row">
                     <div class="form-group">
-                        <label>Кнопка 1 (UA / EN)</label>
+                        <label>Кнопка 1 (UA / EN / HE)</label>
                         <input type="text" data-field="hero.cta_primary_ua" style="margin-bottom:8px">
-                        <input type="text" data-field="hero.cta_primary_en">
+                        <input type="text" data-field="hero.cta_primary_en" style="margin-bottom:8px">
+                        <input type="text" data-field="hero.cta_primary_he" dir="rtl">
                     </div>
                     <div class="form-group">
-                        <label>Кнопка 2 (UA / EN)</label>
+                        <label>Кнопка 2 (UA / EN / HE)</label>
                         <input type="text" data-field="hero.cta_secondary_ua" style="margin-bottom:8px">
-                        <input type="text" data-field="hero.cta_secondary_en">
+                        <input type="text" data-field="hero.cta_secondary_en" style="margin-bottom:8px">
+                        <input type="text" data-field="hero.cta_secondary_he" dir="rtl">
                     </div>
                 </div>
             </div>
@@ -154,6 +194,10 @@
                         <label>Заголовок (EN)</label>
                         <input type="text" data-field="about.title_en">
                     </div>
+                    <div class="form-group">
+                        <label>Заголовок (HE)</label>
+                        <input type="text" data-field="about.title_he" dir="rtl">
+                    </div>
                 </div>
                 <div class="form-group">
                     <label>Текст (UA)</label>
@@ -162,6 +206,10 @@
                 <div class="form-group">
                     <label>Текст (EN)</label>
                     <textarea data-field="about.text_en" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Текст (HE)</label>
+                    <textarea data-field="about.text_he" rows="4" dir="rtl"></textarea>
                 </div>
             </div>
 
@@ -173,18 +221,21 @@
                         <input type="text" data-field="about.stat1_value">
                         <input type="text" data-field="about.stat1_label_ua" placeholder="Підпис UA" style="margin-top:8px">
                         <input type="text" data-field="about.stat1_label_en" placeholder="Підпис EN" style="margin-top:8px">
+                        <input type="text" data-field="about.stat1_label_he" placeholder="Підпис HE" style="margin-top:8px" dir="rtl">
                     </div>
                     <div class="form-group">
                         <label>Число 2</label>
                         <input type="text" data-field="about.stat2_value">
                         <input type="text" data-field="about.stat2_label_ua" placeholder="Підпис UA" style="margin-top:8px">
                         <input type="text" data-field="about.stat2_label_en" placeholder="Підпис EN" style="margin-top:8px">
+                        <input type="text" data-field="about.stat2_label_he" placeholder="Підпис HE" style="margin-top:8px" dir="rtl">
                     </div>
                     <div class="form-group">
                         <label>Число 3</label>
                         <input type="text" data-field="about.stat3_value">
                         <input type="text" data-field="about.stat3_label_ua" placeholder="Підпис UA" style="margin-top:8px">
                         <input type="text" data-field="about.stat3_label_en" placeholder="Підпис EN" style="margin-top:8px">
+                        <input type="text" data-field="about.stat3_label_he" placeholder="Підпис HE" style="margin-top:8px" dir="rtl">
                     </div>
                 </div>
             </div>
@@ -220,6 +271,10 @@
                 <div class="form-group">
                     <label>Адреса (EN)</label>
                     <textarea data-field="contacts.address_en" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Адреса (HE)</label>
+                    <textarea data-field="contacts.address_he" rows="3" dir="rtl"></textarea>
                 </div>
                 <div class="field-row">
                     <div class="form-group">

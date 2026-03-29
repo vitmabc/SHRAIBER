@@ -50,7 +50,7 @@
                     <circle cx="31" cy="6" r="2" fill="#E8B931"/>
                 </svg>
                 <span class="nav__logo-text">
-                    <span class="nav__logo-name" data-i18n="logo_name">Ліцей Шрайбер</span>
+                    <span class="nav__logo-name" data-i18n="logo_name">Ліцей родини Шрайбер</span>
                 </span>
             </a>
             
@@ -64,11 +64,11 @@
             </ul>
 
             <div class="nav__actions">
-                <button class="lang-switch" id="lang-switch" aria-label="Switch language">
-                    <span class="lang-switch__current">UA</span>
-                    <span class="lang-switch__divider">|</span>
-                    <span class="lang-switch__other">EN</span>
-                </button>
+                <div class="lang-switch" id="lang-switch" role="group" aria-label="Switch language">
+                    <button type="button" class="lang-switch__option is-active" data-lang-option="uk">UA</button>
+                    <button type="button" class="lang-switch__option" data-lang-option="en">EN</button>
+                    <button type="button" class="lang-switch__option" data-lang-option="he">HE</button>
+                </div>
                 <a href="#contacts" class="nav__cta" data-i18n="nav_cta">Зв'язатися</a>
                 <button class="nav__hamburger" id="hamburger" aria-label="Menu">
                     <span></span>

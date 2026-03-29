@@ -1,90 +1,120 @@
 {
   "hero": {
-    "subtitle_ua": "SHRAIBER CORPORATE LYCEUM TEST",
+    "logo_name_ua": "Ліцей родини Шрайбер",
+    "logo_name_en": "Schreiber Family Lyceum",
+    "logo_name_he": "ליצאום משפחת שרייבר",
+    "subtitle_ua": "БІЛОЦЕРКІВСЬКИЙ КОРПОРАТИВНИЙ ЛІЦЕЙ",
     "subtitle_en": "BILA TSERKVA CORPORATE LYCEUM",
+    "subtitle_he": "ליצאום תאגידי בבילה צרקווה",
     "title_line1_ua": "ОСВІТА",
     "title_line1_en": "EDUCATION",
+    "title_line1_he": "חינוך",
     "title_accent_ua": "НОВОГО",
     "title_accent_en": "OF THE NEW",
+    "title_accent_he": "של הדור",
     "title_line2_ua": "ПОКОЛІННЯ",
     "title_line2_en": "GENERATION",
+    "title_line2_he": "החדש",
     "description_ua": "Інноваційний підхід до навчання з індивідуальною увагою до кожного учня. STEAM-освіта, сучасні технології та цінності, що формують лідерів майбутнього.",
     "description_en": "An innovative approach to learning with individual attention to every student. STEAM education, modern technologies, and values that shape the leaders of tomorrow.",
+    "description_he": "גישה חדשנית ללמידה עם תשומת לב אישית לכל תלמיד. חינוך STEAM, טכנולוגיות מתקדמות וערכים שמעצבים את מנהיגי המחר.",
     "cta_primary_ua": "Зв'язатися",
     "cta_primary_en": "Contact Us",
+    "cta_primary_he": "יצירת קשר",
     "cta_secondary_ua": "Дізнатися більше",
-    "cta_secondary_en": "Learn More"
+    "cta_secondary_en": "Learn More",
+    "cta_secondary_he": "לקריאה נוספת"
   },
   "about": {
     "label_ua": "ПРО НАС",
     "label_en": "ABOUT US",
+    "label_he": "עלינו",
     "title_ua": "Ліцей родини Шрайбер",
     "title_en": "Schreiber Family Lyceum",
+    "title_he": "ליצאום משפחת שרייבר",
     "text_ua": "Білоцерківський корпоративний ліцей родини Шрайбер — це сучасний заклад загальної середньої освіти, заснований у 2024 році. Ми поєднуємо найкращі освітні традиції з інноваційними підходами, створюючи середовище, де кожна дитина розкриває свій потенціал.",
     "text_en": "The Schreiber Family Corporate Lyceum in Bila Tserkva is a modern secondary education institution founded in 2024. We combine the best educational traditions with innovative approaches, creating an environment where every child can unlock their potential.",
+    "text_he": "הליצאום התאגידי של משפחת שרייבר בבילה צרקווה הוא מוסד חינוכי מודרני שנוסד בשנת 2024. אנחנו משלבים מסורות חינוכיות חזקות עם גישות חדשניות ויוצרים סביבה שבה כל ילד וילדה יכולים לממש את הפוטנציאל שלהם.",
     "stat1_value": "500",
     "stat1_label_ua": "Учнів",
     "stat1_label_en": "Students",
+    "stat1_label_he": "תלמידים",
     "stat2_value": "50",
     "stat2_label_ua": "Педагогів",
     "stat2_label_en": "Teachers",
+    "stat2_label_he": "מורים",
     "stat3_value": "100",
     "stat3_suffix": "%",
     "stat3_label_ua": "Сучасне обладнання",
-    "stat3_label_en": "Modern Equipment"
+    "stat3_label_en": "Modern Equipment",
+    "stat3_label_he": "ציוד מודרני"
   },
   "values": [
     {
       "icon": "book",
       "title_ua": "Академічна досконалість",
       "title_en": "Academic Excellence",
+      "title_he": "מצוינות אקדמית",
       "text_ua": "Високі стандарти навчання з впровадженням STEAM-підходу та розвитком критичного мислення",
-      "text_en": "High educational standards with STEAM approach and critical thinking development"
+      "text_en": "High educational standards with STEAM approach and critical thinking development",
+      "text_he": "סטנדרטים גבוהים בלמידה עם גישת STEAM ופיתוח חשיבה ביקורתית"
     },
     {
       "icon": "star",
       "title_ua": "Інноваційні технології",
       "title_en": "Innovative Technologies",
+      "title_he": "טכנולוגיות חדשניות",
       "text_ua": "Сучасні лабораторії, комп'ютерні класи та цифрові інструменти для ефективного навчання",
-      "text_en": "Modern labs, computer classes, and digital tools for effective learning"
+      "text_en": "Modern labs, computer classes, and digital tools for effective learning",
+      "text_he": "מעבדות מודרניות, כיתות מחשבים וכלים דיגיטליים ללמידה יעילה"
     },
     {
       "icon": "people",
       "title_ua": "Спільнота та цінності",
       "title_en": "Community & Values",
+      "title_he": "קהילה וערכים",
       "text_ua": "Виховання лідерських якостей, толерантності та відповідальності перед суспільством",
-      "text_en": "Developing leadership, tolerance, and social responsibility"
+      "text_en": "Developing leadership, tolerance, and social responsibility",
+      "text_he": "פיתוח מנהיגות, סובלנות ואחריות חברתית"
     },
     {
       "icon": "globe",
       "title_ua": "Культурне різноманіття",
       "title_en": "Cultural Diversity",
+      "title_he": "מגוון תרבותי",
       "text_ua": "Вивчення української та єврейської культурної спадщини, відкритість до світу",
-      "text_en": "Exploring Ukrainian and Jewish cultural heritage, openness to the world"
+      "text_en": "Exploring Ukrainian and Jewish cultural heritage, openness to the world",
+      "text_he": "היכרות עם המורשת התרבותית האוקראינית והיהודית ופתיחות לעולם"
     }
   ],
   "news": [
     {
       "title_ua": "День відкритих дверей",
       "title_en": "Open House Day",
+      "title_he": "יום פתוח",
       "text_ua": "Запрошуємо майбутніх учнів та їхніх батьків на День відкритих дверей. Ви зможете ознайомитися з нашими класами, лабораторіями та освітньою програмою.",
       "text_en": "We invite future students and their parents to our Open House Day. You will be able to explore our classrooms, labs, and educational program.",
+      "text_he": "אנו מזמינים תלמידים עתידיים והוריהם ליום פתוח. תוכלו להכיר את הכיתות, המעבדות ותוכנית הלימודים שלנו.",
       "date": "15.03.2026",
       "image": "images/lyceum-real.jpg"
     },
     {
       "title_ua": "STEAM-тиждень у ліцеї",
       "title_en": "STEAM Week at the Lyceum",
+      "title_he": "שבוע STEAM בליצאום",
       "text_ua": "Протягом тижня учні працювали над міждисциплінарними проєктами, поєднуючи науку, технології, мистецтво та математику.",
       "text_en": "During the week, students worked on interdisciplinary projects combining science, technology, art, and mathematics.",
+      "text_he": "במהלך השבוע עבדו התלמידים על פרויקטים בין-תחומיים ששילבו מדע, טכנולוגיה, אמנות ומתמטיקה.",
       "date": "01.03.2026",
       "image": "images/lyceum-computer.png"
     },
     {
       "title_ua": "Ліцей отримав ліцензію",
       "title_en": "Lyceum Receives License",
+      "title_he": "הליצאום קיבל רישיון",
       "text_ua": "Білоцерківський корпоративний ліцей родини Шрайбер отримав ліцензію на провадження освітньої діяльності від Державної служби якості освіти.",
       "text_en": "The Schreiber Family Corporate Lyceum has received an educational license from the State Education Quality Service.",
+      "text_he": "הליצאום התאגידי של משפחת שרייבר קיבל רישיון לפעילות חינוכית מטעם השירות הממלכתי לאיכות החינוך.",
       "date": "19.12.2024",
       "image": "images/lyceum-real.jpg"
     }
@@ -92,6 +122,7 @@
   "contacts": {
     "address_ua": "вул. Павла Скоропадського, 4\nм. Біла Церква, Київська обл.\n09107, Україна",
     "address_en": "4 Pavla Skoropadskoho St.\nBila Tserkva, Kyiv Oblast\n09107, Ukraine",
+    "address_he": "רח׳ פבלו סקורופדסקוהו 4\nבילה צרקווה, מחוז קייב\n09107, אוקראינה",
     "phone": "+38 093 748 88 49",
     "email": "sf.lyceum@gmail.com",
     "instagram": "https://www.instagram.com/schreiber_family_school/"

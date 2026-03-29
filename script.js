@@ -193,15 +193,114 @@ const translations = {
         form_success_title: 'Thank You!',
         form_success_text: 'Your message has been sent. We will get back to you soon.',
         footer_name: 'Schreiber Family Lyceum',
-        footer_description: 'Bila Tserkva Corporate Schreiber Family Lyceum — a modern secondary education institution with an innovative approach.',
+        footer_description: 'Bila Tserkva Corporate Schreiber Family Lyceum - a modern secondary education institution with an innovative approach.',
         footer_nav_title: 'Navigation',
         footer_docs_title: 'Documents',
-        footer_copyright: 'Bila Tserkva Corporate Schreiber Family Lyceum. All rights reserved.',
+        footer_copyright: 'Bila Tserkva Corporate Schreiber Family Lyceum. All rights reserved.'
+    },
+    he: {
+        logo_name: 'ליצאום שרייבר',
+        nav_home: 'דף הבית',
+        nav_about: 'על הליצאום',
+        nav_values: 'ערכים',
+        nav_education: 'לימודים',
+        nav_news: 'חדשות',
+        nav_gallery: 'גלריה',
+        nav_contacts: 'יצירת קשר',
+        nav_cta: 'דברו איתנו',
+        hero_subtitle: 'ליצאום תאגידי בעיר בילה צרקווה',
+        hero_title_1: 'חינוך',
+        hero_title_2: 'של הדור',
+        hero_title_3: 'החדש',
+        hero_description: 'גישה חדשנית ללמידה עם תשומת לב אישית לכל תלמיד. חינוך STEAM, טכנולוגיות מתקדמות וערכים שמעצבים את מנהיגי המחר.',
+        hero_btn_about: 'לקריאה נוספת',
+        hero_btn_contact: 'יצירת קשר',
+        hero_scroll: 'גללו למטה',
+        about_label: 'עלינו',
+        about_title: 'ליצאום משפחת שרייבר',
+        about_text_1: 'הליצאום התאגידי של משפחת שרייבר בבילה צרקווה הוא מוסד חינוכי מודרני שנוסד בשנת 2024. אנחנו משלבים מסורות חינוכיות חזקות עם גישות חדשניות ויוצרים סביבה שבה כל ילד וילדה יכולים לממש את הפוטנציאל שלהם.',
+        about_text_2: 'הליצאום שלנו הוא מקום שבו הלמידה הופכת למסע מרתק. אנו עובדים בגישת STEAM ומשלבים מדע, טכנולוגיה, הנדסה, אמנות ומתמטיקה להתפתחות רחבה של התלמידים.',
+        about_stat_1: 'תלמידים בכיתה',
+        about_stat_2: 'שפות לימוד',
+        about_stat_3: 'יחס אישי',
+        about_license: 'רישיון',
+        about_statute: 'תקנון',
+        values_label: 'הערכים שלנו',
+        values_title: 'מה מייחד אותנו',
+        value_1_title: 'מצוינות אקדמית',
+        value_1_text: 'סטנדרטים גבוהים בלמידה עם יחס אישי. כיתות קטנות מאפשרות לנו להקדיש תשומת לב לכל תלמיד.',
+        value_2_title: 'טכנולוגיות חדשניות',
+        value_2_text: 'גישת STEAM, כלים דיגיטליים וציוד מודרני. אנחנו מכינים את התלמידים לאתגרי העתיד.',
+        value_3_title: 'קהילה וערכים',
+        value_3_text: 'כבוד, אחריות ותמיכה הדדית. אנו בונים לא רק ידע אלא גם אופי.',
+        value_4_title: 'מגוון תרבותי',
+        value_4_text: 'למידה באוקראינית, באנגלית ובעברית. פתיחות לעולם לצד שמירה על מסורת.',
+        edu_label: 'תהליך הלימוד',
+        edu_title: 'איך אנחנו מלמדים',
+        edu_tag_1: 'STEAM',
+        edu_card_1_title: 'גישת STEAM משולבת',
+        edu_card_1_text: 'אנו מחברים בין מדע, טכנולוגיה, הנדסה, אמנות ומתמטיקה לתוכנית לימודים אחת, חיה ומעוררת עניין.',
+        edu_tag_2: 'פדגוגיה',
+        edu_card_2_title: 'מסלול אישי',
+        edu_card_2_text: 'כל תלמיד הוא עולם בפני עצמו. אנו בונים מסלול התפתחות אישי לפי היכולות והתחומים שמעניינים אותו.',
+        edu_tag_3: 'סביבה',
+        edu_card_3_title: 'מרחב מודרני',
+        edu_card_3_text: 'כיתות מצוידות, טכנולוגיה עדכנית ואזורים נוחים ללמידה ולמנוחה - כל מה שנדרש להתפתחות מיטבית.',
+        edu_doc_title: 'מסמכים',
+        edu_doc_1: 'צו קבלה לכיתה א לשנת 2025/2026',
+        edu_doc_2: 'הסמכת צוות הוראה 2026',
+        news_label: 'חדשות',
+        news_title: 'אירועים אחרונים',
+        news_tag_event: 'אירוע',
+        news_tag_education: 'לימודים',
+        news_tag_official: 'רשמי',
+        news_1_title: 'יום פתוח 2026',
+        news_1_text: 'אנו מזמינים הורים ותלמידים עתידיים להכיר את הליצאום, את תוכניות הלימוד ואת הצוות החינוכי. תוכלו לראות את הכיתות ולשאול שאלות.',
+        news_2_title: 'שבוע STEAM: מדע ויצירה',
+        news_2_text: 'התלמידים הציגו פרויקטים בנקודת המפגש בין מדע לאמנות - מרובוטיקה ועד ציור דיגיטלי.',
+        news_3_title: 'הליצאום קיבל רישיון מדינתי',
+        news_3_text: 'ליצאום משפחת שרייבר נרשם באופן רשמי וקיבל רישיון לפעילות חינוכית.',
+        news_read_more: 'לקריאה נוספת ←',
+        gallery_label: 'גלריה',
+        gallery_title: 'החיים שלנו',
+        gallery_campus: 'הקמפוס שלנו',
+        gallery_learning: 'למידה',
+        gallery_teachers: 'צוות',
+        gallery_life: 'חיי בית הספר',
+        gallery_building: 'הבניין',
+        contacts_label: 'יצירת קשר',
+        contacts_title: 'נשמח לשוחח',
+        contacts_address_title: 'כתובת',
+        contacts_phone_title: 'טלפון',
+        contacts_form_title: 'כתבו לנו',
+        form_name: 'שם *',
+        form_email: 'אימייל *',
+        form_subject: 'נושא',
+        form_subject_default: 'בחרו נושא',
+        form_subject_admission: 'הרשמה לליצאום',
+        form_subject_general: 'שאלה כללית',
+        form_subject_cooperation: 'שיתוף פעולה',
+        form_subject_other: 'אחר',
+        form_message: 'הודעה *',
+        form_name_error: 'אנא הזינו את שמכם',
+        form_email_error: 'אנא הזינו אימייל תקין',
+        form_message_error: 'אנא הזינו הודעה',
+        form_submit: 'שליחת הודעה',
+        form_note: '* שדות חובה. המידע שלכם מוגן ואינו מועבר לצדדים שלישיים.',
+        form_success_title: 'תודה רבה!',
+        form_success_text: 'ההודעה נשלחה. נחזור אליכם בהקדם.',
+        footer_name: 'ליצאום משפחת שרייבר',
+        footer_description: 'הליצאום התאגידי של משפחת שרייבר בבילה צרקווה הוא מוסד חינוכי מודרני עם גישה חדשנית.',
+        footer_nav_title: 'ניווט',
+        footer_docs_title: 'מסמכים',
+        footer_copyright: 'הליצאום התאגידי של משפחת שרייבר. כל הזכויות שמורות.'
     }
 };
 
 // ── State ─────────────────────────────────────────────
-let currentLang = localStorage.getItem('lang') || 'uk';
+const SUPPORTED_LANGS = ['uk', 'en', 'he'];
+let currentLang = SUPPORTED_LANGS.includes(localStorage.getItem('lang')) ? localStorage.getItem('lang') : 'uk';
+let siteContent = null;
 
 // ── DOM Elements ──────────────────────────────────────
 const header = document.getElementById('header');
@@ -223,6 +322,11 @@ const contactFormMessages = {
         sending: 'Sending your message...',
         error: 'We could not send your message. Please try again.',
         rateLimit: 'Too many requests. Please try again later.'
+    },
+    he: {
+        sending: 'שולחים את ההודעה...',
+        error: 'לא הצלחנו לשלוח את ההודעה. נסו שוב.',
+        rateLimit: 'נשלחו יותר מדי פניות. נסו שוב מעט מאוחר יותר.'
     }
 };
 
@@ -285,7 +389,11 @@ function updateContactDetails(contacts) {
         setLinkGroup('[data-contact-email]', `mailto:${contacts.email}`, contacts.email);
     }
 
-    const addressKey = currentLang === 'uk' ? contacts.address_ua : contacts.address_en;
+    const addressKey = currentLang === 'uk'
+        ? contacts.address_ua
+        : currentLang === 'he'
+            ? (contacts.address_he || contacts.address_en)
+            : contacts.address_en;
     if (addressKey) {
         setMultilineText('contact-address', addressKey);
         setMultilineText('footer-address', addressKey);
@@ -323,33 +431,47 @@ async function loadDynamicContent() {
         const res = await fetch('/content.json');
         if (!res.ok) return;
         const c = await res.json();
+        siteContent = c;
 
         // ── Hero ──
         if (c.hero) {
+            translations.uk.logo_name = c.hero.logo_name_ua || translations.uk.logo_name;
+            translations.en.logo_name = c.hero.logo_name_en || translations.en.logo_name;
+            translations.he.logo_name = c.hero.logo_name_he || translations.he.logo_name;
             translations.uk.hero_subtitle = c.hero.subtitle_ua || translations.uk.hero_subtitle;
             translations.en.hero_subtitle = c.hero.subtitle_en || translations.en.hero_subtitle;
+            translations.he.hero_subtitle = c.hero.subtitle_he || translations.he.hero_subtitle;
             translations.uk.hero_title_1 = c.hero.title_line1_ua || translations.uk.hero_title_1;
             translations.en.hero_title_1 = c.hero.title_line1_en || translations.en.hero_title_1;
+            translations.he.hero_title_1 = c.hero.title_line1_he || translations.he.hero_title_1;
             translations.uk.hero_title_2 = c.hero.title_accent_ua || translations.uk.hero_title_2;
             translations.en.hero_title_2 = c.hero.title_accent_en || translations.en.hero_title_2;
+            translations.he.hero_title_2 = c.hero.title_accent_he || translations.he.hero_title_2;
             translations.uk.hero_title_3 = c.hero.title_line2_ua || translations.uk.hero_title_3;
             translations.en.hero_title_3 = c.hero.title_line2_en || translations.en.hero_title_3;
+            translations.he.hero_title_3 = c.hero.title_line2_he || translations.he.hero_title_3;
             translations.uk.hero_description = c.hero.description_ua || translations.uk.hero_description;
             translations.en.hero_description = c.hero.description_en || translations.en.hero_description;
+            translations.he.hero_description = c.hero.description_he || translations.he.hero_description;
             translations.uk.hero_btn_contact = c.hero.cta_primary_ua || translations.uk.hero_btn_contact;
             translations.en.hero_btn_contact = c.hero.cta_primary_en || translations.en.hero_btn_contact;
+            translations.he.hero_btn_contact = c.hero.cta_primary_he || translations.he.hero_btn_contact;
             translations.uk.hero_btn_about = c.hero.cta_secondary_ua || translations.uk.hero_btn_about;
             translations.en.hero_btn_about = c.hero.cta_secondary_en || translations.en.hero_btn_about;
+            translations.he.hero_btn_about = c.hero.cta_secondary_he || translations.he.hero_btn_about;
         }
 
         // ── About ──
         if (c.about) {
             translations.uk.about_label = c.about.label_ua || translations.uk.about_label;
             translations.en.about_label = c.about.label_en || translations.en.about_label;
+            translations.he.about_label = c.about.label_he || translations.he.about_label;
             translations.uk.about_title = c.about.title_ua || translations.uk.about_title;
             translations.en.about_title = c.about.title_en || translations.en.about_title;
+            translations.he.about_title = c.about.title_he || translations.he.about_title;
             translations.uk.about_text_1 = c.about.text_ua || translations.uk.about_text_1;
             translations.en.about_text_1 = c.about.text_en || translations.en.about_text_1;
+            translations.he.about_text_1 = c.about.text_he || translations.he.about_text_1;
 
             // Stats
             if (c.about.stat1_value) {
@@ -366,10 +488,13 @@ async function loadDynamicContent() {
             }
             if (c.about.stat1_label_ua) translations.uk.about_stat_1 = c.about.stat1_label_ua;
             if (c.about.stat1_label_en) translations.en.about_stat_1 = c.about.stat1_label_en;
+            if (c.about.stat1_label_he) translations.he.about_stat_1 = c.about.stat1_label_he;
             if (c.about.stat2_label_ua) translations.uk.about_stat_2 = c.about.stat2_label_ua;
             if (c.about.stat2_label_en) translations.en.about_stat_2 = c.about.stat2_label_en;
+            if (c.about.stat2_label_he) translations.he.about_stat_2 = c.about.stat2_label_he;
             if (c.about.stat3_label_ua) translations.uk.about_stat_3 = c.about.stat3_label_ua;
             if (c.about.stat3_label_en) translations.en.about_stat_3 = c.about.stat3_label_en;
+            if (c.about.stat3_label_he) translations.he.about_stat_3 = c.about.stat3_label_he;
         }
 
         // ── Values ──
@@ -378,8 +503,10 @@ async function loadDynamicContent() {
                 const n = i + 1;
                 if (v.title_ua) translations.uk[`value_${n}_title`] = v.title_ua;
                 if (v.title_en) translations.en[`value_${n}_title`] = v.title_en;
+                if (v.title_he) translations.he[`value_${n}_title`] = v.title_he;
                 if (v.text_ua) translations.uk[`value_${n}_text`] = v.text_ua;
                 if (v.text_en) translations.en[`value_${n}_text`] = v.text_en;
+                if (v.text_he) translations.he[`value_${n}_text`] = v.text_he;
             });
         }
 
@@ -392,8 +519,10 @@ async function loadDynamicContent() {
                 // Update i18n keys
                 if (n.title_ua) translations.uk[`news_${i+1}_title`] = n.title_ua;
                 if (n.title_en) translations.en[`news_${i+1}_title`] = n.title_en;
+                if (n.title_he) translations.he[`news_${i+1}_title`] = n.title_he;
                 if (n.text_ua) translations.uk[`news_${i+1}_text`] = n.text_ua;
                 if (n.text_en) translations.en[`news_${i+1}_text`] = n.text_en;
+                if (n.text_he) translations.he[`news_${i+1}_text`] = n.text_he;
                 // Update date
                 if (n.date) {
                     const dateEl = card.querySelector('.news__card-date');
@@ -507,8 +636,14 @@ function initSmoothScroll() {
 
 // ── Language Switch ───────────────────────────────────
 function initLanguageSwitch() {
-    langSwitch.addEventListener('click', () => {
-        currentLang = currentLang === 'uk' ? 'en' : 'uk';
+    langSwitch.addEventListener('click', (event) => {
+        const option = event.target.closest('[data-lang-option]');
+        if (!option) return;
+
+        const nextLang = option.getAttribute('data-lang-option');
+        if (!SUPPORTED_LANGS.includes(nextLang) || nextLang === currentLang) return;
+
+        currentLang = nextLang;
         localStorage.setItem('lang', currentLang);
         applyLanguage(currentLang);
     });
@@ -519,7 +654,8 @@ function applyLanguage(lang) {
     if (!t) return;
 
     // Update html lang attribute
-    document.documentElement.lang = lang === 'uk' ? 'uk' : 'en';
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'he' ? 'rtl' : 'ltr';
 
     // Update all elements with data-i18n
     document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -529,11 +665,13 @@ function applyLanguage(lang) {
         }
     });
 
-    // Update lang switch display
-    const currentEl = langSwitch.querySelector('.lang-switch__current');
-    const otherEl = langSwitch.querySelector('.lang-switch__other');
-    currentEl.textContent = lang.toUpperCase();
-    otherEl.textContent = lang === 'uk' ? 'EN' : 'UA';
+    langSwitch.querySelectorAll('[data-lang-option]').forEach(option => {
+        option.classList.toggle('is-active', option.getAttribute('data-lang-option') === lang);
+    });
+
+    if (siteContent?.contacts) {
+        updateContactDetails(siteContent.contacts);
+    }
 }
 
 // ── Contact Form ──────────────────────────────────────

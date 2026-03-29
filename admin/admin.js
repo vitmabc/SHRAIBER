@@ -175,6 +175,10 @@ function renderValues() {
                     <label>Назва (EN)</label>
                     <input type="text" data-value="${i}" data-vfield="title_en" value="${escapeHtml(v.title_en || '')}">
                 </div>
+                <div class="form-group">
+                    <label>Назва (HE)</label>
+                    <input type="text" data-value="${i}" data-vfield="title_he" value="${escapeHtml(v.title_he || '')}" dir="rtl">
+                </div>
             </div>
             <div class="form-group">
                 <label>Опис (UA)</label>
@@ -183,6 +187,10 @@ function renderValues() {
             <div class="form-group">
                 <label>Опис (EN)</label>
                 <textarea data-value="${i}" data-vfield="text_en" rows="2">${escapeHtml(v.text_en || '')}</textarea>
+            </div>
+            <div class="form-group">
+                <label>Опис (HE)</label>
+                <textarea data-value="${i}" data-vfield="text_he" rows="2" dir="rtl">${escapeHtml(v.text_he || '')}</textarea>
             </div>
         </div>
     `).join('');
@@ -217,6 +225,10 @@ function renderNews() {
                     <label>Заголовок (EN)</label>
                     <input type="text" data-news="${i}" data-nfield="title_en" value="${escapeHtml(n.title_en || '')}">
                 </div>
+                <div class="form-group">
+                    <label>Заголовок (HE)</label>
+                    <input type="text" data-news="${i}" data-nfield="title_he" value="${escapeHtml(n.title_he || '')}" dir="rtl">
+                </div>
             </div>
             <div class="form-group">
                 <label>Текст (UA)</label>
@@ -225,6 +237,10 @@ function renderNews() {
             <div class="form-group">
                 <label>Текст (EN)</label>
                 <textarea data-news="${i}" data-nfield="text_en" rows="2">${escapeHtml(n.text_en || '')}</textarea>
+            </div>
+            <div class="form-group">
+                <label>Текст (HE)</label>
+                <textarea data-news="${i}" data-nfield="text_he" rows="2" dir="rtl">${escapeHtml(n.text_he || '')}</textarea>
             </div>
             <div class="field-row">
                 <div class="form-group">
@@ -280,8 +296,10 @@ function addNewsItem() {
     content.news.unshift({
         title_ua: 'Нова новина',
         title_en: 'New Article',
+        title_he: 'ידיעה חדשה',
         text_ua: '',
         text_en: '',
+        text_he: '',
         date: new Date().toLocaleDateString('uk-UA', { day: '2-digit', month: '2-digit', year: 'numeric' }),
         image: 'images/lyceum-real.jpg'
     });
