@@ -14,7 +14,8 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const DIST = join(__dirname, 'dist');
 const CONTENT_FILE = join(__dirname, 'content.json');
 const CONTACT_MESSAGES_FILE = join(__dirname, 'contact-messages.json');
-const UPLOAD_DIR = join(DIST, 'uploads');
+const UPLOAD_DIR = join(__dirname, 'uploads');
+const LEGACY_UPLOAD_DIR = join(DIST, 'uploads');
 const ADMIN_DIR = join(__dirname, 'admin');
 
 const MAX_JSON_BODY_BYTES = 256 * 1024;
@@ -538,7 +539,11 @@ const server = createServer(async (req, res) => {
 
     let filePath;
     if (pathname.startsWith('/uploads/')) {
-        filePath = join(UPLOAD_DIR, basename(pathname));
+        const uploadFileName = basename(pathname);
+        const primaryUploadPath = join(UPLOAD_DIR, uploadFileName);
+        const legacyUploadPath = join(LEGACY_UPLOAD_DIR, uploadFileName);
+
+        filePath = existsSync(primaryUploadPath) ? primaryUploadPath : legacyUploadPath;
     } else {
         filePath = join(DIST, pathname === '/' ? 'index.html' : pathname);
     }
