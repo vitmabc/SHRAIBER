@@ -286,6 +286,8 @@ ul, ol {
     gap: 0.75rem;
     color: var(--color-white);
     z-index: 1001;
+    min-width: 0;
+    flex: 1 1 auto;
 }
 
 .nav__logo-icon {
@@ -294,11 +296,18 @@ ul, ol {
     flex-shrink: 0;
 }
 
+.nav__logo-text {
+    min-width: 0;
+}
+
 .nav__logo-name {
+    display: block;
     font-family: var(--font-heading);
     font-size: 1.125rem;
     font-weight: 600;
     letter-spacing: 0.02em;
+    line-height: 1.05;
+    text-wrap: balance;
 }
 
 .nav__links {
@@ -329,6 +338,7 @@ ul, ol {
     align-items: center;
     gap: 0.75rem;
     z-index: 1001;
+    flex-shrink: 0;
 }
 
 .nav__cta {
@@ -628,6 +638,55 @@ html[dir="rtl"] .menu-overlay__link:hover {
 }
 
 @media (max-height: 650px) {
+    .hero__scroll-indicator {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav {
+        gap: 0.65rem;
+    }
+
+    .nav__logo {
+        gap: 0.55rem;
+        align-items: flex-start;
+    }
+
+    .nav__logo-icon {
+        width: 32px;
+        height: 32px;
+        margin-top: 0.15rem;
+    }
+
+    .nav__logo-name {
+        max-width: 14ch;
+        font-size: 0.98rem;
+    }
+
+    .nav__actions {
+        gap: 0.45rem;
+    }
+
+    .lang-switch {
+        gap: 0.125rem;
+        padding: 0.18rem;
+    }
+
+    .lang-switch__option {
+        min-width: 1.9rem;
+        padding: 0.22rem 0.38rem;
+        font-size: 0.72rem;
+    }
+
+    .nav__hamburger {
+        padding: 6px;
+    }
+
+    .nav__hamburger span {
+        width: 22px;
+    }
+
     .hero__scroll-indicator {
         display: none;
     }
